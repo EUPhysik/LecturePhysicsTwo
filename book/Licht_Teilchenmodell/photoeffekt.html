@@ -1,0 +1,705 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="en" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>2. Photoeffekt &#8212; Skript Physik 2</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=12da95d707ffb74b382d" rel="stylesheet" />
+<link href="../../_static/styles/bootstrap.css?digest=12da95d707ffb74b382d" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=12da95d707ffb74b382d" rel="stylesheet" />
+
+  
+  <link href="../../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=12da95d707ffb74b382d" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" href="../../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=12da95d707ffb74b382d" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=12da95d707ffb74b382d" />
+
+    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/clipboard.min.js"></script>
+    <script src="../../_static/copybutton.js"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'book/Licht_Teilchenmodell/photoeffekt';</script>
+    <link rel="canonical" href="https://euphysik.github.io/LecturePhysicsTwo/book/Licht_Teilchenmodell/photoeffekt.html" />
+    <link rel="shortcut icon" href="../../_static/physics_icon_small.png"/>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="3. Comptoneffekt" href="comptoneffekt.html" />
+    <link rel="prev" title="1. Teilchenmodell" href="teilchenmodell.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+  
+
+<a class="navbar-brand logo" href="../../intro.html">
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../../_static/FB3_ET-Logo.png" class="logo__image only-light" alt="Logo image"/>
+    <script>document.write(`<img src="../../_static/FB3_ET-Logo.png" class="logo__image only-dark" alt="Logo image"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Schwingungen</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../Schwingungen/schwingungen1.html">1. Was sind Schwingungen?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Schwingungen/mechanische_schwingungen.html">2. Mechanische Schwingungen</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Schwingungen/federpendel.html">3. Federpendel</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Schwingungen/gedaempfte_schwingung.html">4. Gedämpfte Schwingung</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Schwingungen/erzwungene_schwingung.html">5. Erzwungene Schwingung</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Schwingungen/mathematisches_pendel.html">6. Mathematisches Pendel</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Schwingungen/physikalisches_pendel.html">7. Physikalisches Pendel</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Wellen</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../Wellen/wellen.html">1. Was sind Wellen?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Wellen/transversalwellen.html">2. Transversalwellen</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Wellen/longitudinalwellen.html">3. Longitudinalwellen</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Wellen/wellenausbreitung.html">4. Wellenausbreitung</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Wellen/schallintensitaet.html">5. Schallintensität</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Wellen/welleneffekte.html">6. Dopplereffekt</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Wellen/wellenausbreitung2.html">7. Wellenausbreitung an Hindernissen</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Wellen/ueberlagerung.html">8. Überlagerung von Wellen</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Wellen/schwebung.html">9. Schwebung</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Wellen/stehende_wellen.html">10. Stehende Wellen</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Licht im Wellenmodell</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../Licht/licht.html">1. Licht</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Licht/licht_grundlagen.html">2. Grundlagen</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Licht/licht_reflexion.html">3. Reflexion</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Licht/licht_brechung.html">4. Brechung</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Licht/licht_totalreflexion.html">5. Totalreflexion</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Licht/licht_dispersion.html">6. Dispersion</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Licht/licht_polarisation.html">7. Polarisation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Licht/licht_luftspiegelung_fatamorgana.html">8. Effekte durch variable Brechung</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Geometrische Optik</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../geometrische_Optik/geometrischeoptik.html">1. Geometrische Optik</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../geometrische_Optik/spiegel.html">2. Spiegel</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../geometrische_Optik/linsen.html">3. Linsen</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../geometrische_Optik/lupe.html">4. Optische Instrumente</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Interferenz</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../Interferenz/beugung.html">1. Beugung</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Interferenz/einzelspalt.html">2. Interferenz an einem Spalt</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Interferenz/gitter.html">3. Interferenz am Gitter</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Interferenz/duenneschichten.html">4. Interferenz an dünnen Schichten</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Interferenz/newtonscheringe.html">5. Newton’sche Ringe</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Licht im Teilchenmodell</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="teilchenmodell.html">1. Teilchenmodell</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">2. Photoeffekt</a></li>
+<li class="toctree-l1"><a class="reference internal" href="comptoneffekt.html">3. Comptoneffekt</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Spektrometrie</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../Spektrometrie/spektrometrie.html">1. Spektrometrie</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/EUPhysik/LecturePhysicsTwo.git" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/EUPhysik/LecturePhysicsTwo.git/edit/main/book/book/Licht_Teilchenmodell/photoeffekt.md" target="_blank"
+   class="btn btn-sm btn-source-edit-button dropdown-item"
+   title="Suggest edit"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-pencil-alt"></i>
+  </span>
+<span class="btn__text-container">Suggest edit</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/EUPhysik/LecturePhysicsTwo.git/issues/new?title=Issue%20on%20page%20%2Fbook/Licht_Teilchenmodell/photoeffekt.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../../_sources/book/Licht_Teilchenmodell/photoeffekt.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+<script>
+document.write(`
+  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
+    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
+    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  </button>
+`);
+</script>
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Photoeffekt</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#gegenfeldmethode">2.1. Gegenfeldmethode</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#theorie">2.1.1. Theorie</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#innerer-photoeffekt">2.2. Innerer Photoeffekt</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="photoeffekt">
+<h1><span class="section-number">2. </span>Photoeffekt<a class="headerlink" href="#photoeffekt" title="Permalink to this heading">#</a></h1>
+<p><strong>Experiment</strong></p>
+<figure class="align-default" id="photo-1">
+<a class="reference internal image-reference" href="../../_images/Photoeffekt_Schema.png"><img alt="Photoeffekt" src="../../_images/Photoeffekt_Schema.png" style="width: 60%;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 2.17 </span><span class="caption-text">Schematische Darstellung eines Versuchsaufbaus zum Photoeffekt.</span><a class="headerlink" href="#photo-1" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<p>Um den Photoeffekt zu beweisen, kann man folgenden einfachen Versuchsaufbau machen (siehe auch <a class="reference internal" href="#photo-1"><span class="std std-numref">Abbildung 2.17</span></a>):</p>
+<p>Eine Kathode, beispielsweise aus Zink wird negativ aufgeladen, die Ladung der Kathode wird mit einem  <a class="reference external" href="https://de.wikipedia.org/wiki/Elektroskop">Elektroskop</a> gemessen. Dann wird die Zinkplatte mit einer <a class="reference external" href="https://de.wikipedia.org/wiki/Quecksilberdampflampe">Quecksilberdampflampe</a> bestrahlt. Beim Bestrahlen der Zinkplatte geht der Zeigerausschlag am Elektroskop zurück – die Zinkplatte wird also entladen.
+Wann funktioniert das Experiment nicht, wenn beispielsweise</p>
+<ul class="simple">
+<li><p>die Zinkplatte positiv geladen wurde</p></li>
+<li><p>sich eine Glasscheibe zwischen Lampe und Zinkplatte befindet?</p></li>
+<li><p>beispielsweise eine <a class="reference external" href="https://de.wikipedia.org/wiki/Natriumdampflampe">Natriumdampflampe</a> verwendet wird?. Auch bei einer Erhöhung der Strahlungsintensität führt die Bestrahlung mit einer Natriumdampflampe nicht zum Entladen der Zinkplatte.</p></li>
+</ul>
+<p><strong>Erklärung</strong></p>
+<p>Die Quecksilberdampflampe erzeugt UV-Licht mit einer hohen Frequenz (geringer Wellenlänge). Dieses Licht ist in der Lage, einzelne negativ geladene Teilchen (Elektronen) aus der Zinkkathode herauszulösen. Dadurch wird die Ladung der Kathode positiver. Das Licht verrichtet aus Arbeit an der Zinkplatte. Diese Arbeit bezeichnet man auch als Ablösearbeit <span class="math notranslate nohighlight">\(W_A\)</span>, da die Elektroden aus dem Material abgelöst werden.
+Die Natriumdampflampe erzeugt deutlich langwelligeres Licht, welches nicht in der Lage ist, Elektronen aus der Kathode zu lösen.</p>
+<p>Dies bedeutet:</p>
+<p>Nur das kurzwelligere UV-Licht kann <span class="math notranslate nohighlight">\(W_A\)</span> verrichten, nicht das sichtbare Licht und zwar unabhängig von der Intensität des Lichtes.
+Die Energieübertragung des Lichts auf die Elektronen muss sich also bei UV-Licht von sichtbarem Licht unterscheiden. Dies steht im Widerspruch zur Wellentheorie, denn nach dieser sollte bei höherer Intensität auch mehr Energie übertragen werden.</p>
+<p>Zur Erinnerung: Energie einer Welle</p>
+<div class="math notranslate nohighlight">
+\[E= \frac{m}{2} \omega^2 \hat{y}^2\]</div>
+<p>Die Intensität <span class="math notranslate nohighlight">\(I\)</span> von Licht ist definiert also die Energie, die pro Zeit auf eine bestimmte Fläche fällt</p>
+<div class="math notranslate nohighlight">
+\[ I = \frac{dE}{dt\cdot A} \rightarrow  \frac{E}{\Delta t\cdot A}\]</div>
+<p>wenn <span class="math notranslate nohighlight">\(I =\)</span> konstant. Also gilt</p>
+<div class="math notranslate nohighlight">
+\[
+\begin{equation}
+I \propto E \propto \hat{y}^2 	
+\end{equation}
+\]</div>
+<p><strong>Verständnisfragen</strong></p>
+<p>Warum funktioniert das Experiment nicht, wenn eine Glasscheibe zwischen Lampe und Kathode ist?</p>
+<figure class="align-default" id="photo-2">
+<a class="reference internal image-reference" href="../../_images/Photoeffekt_Schema_2.png"><img alt="Photoeffekt" src="../../_images/Photoeffekt_Schema_2.png" style="width: 80%;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 2.18 </span><span class="caption-text">Schematische Darstellung eines Versuchsaufbaus zum Photoeffekt mit Messung des Photostrom</span><a class="headerlink" href="#photo-2" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<p>Bei diesem Experiment kann man nicht nur sehen, dass die Elektronen aus der Zinkkathode herausgelöst werden, diese haben sogar eine gewisse kinetische Energie. Dies kann durch eine geringfügige Ergänzung des Experiments, wie in <a class="reference internal" href="#photo-2"><span class="std std-numref">Abbildung 2.18</span></a> dargestellt, gezeigt werden. Hier wird vor die Kathode ein Metallgitter platziert, welches die Photoelektronen aufnimmt und somit negativ geladen wird. Dadurch entsteht eine Potentialdifferenz zwischen der dann positiv geladenen Kathode und dem negativ geladenen Gitter und es fließt ein Strom, der so genannte Photostrom. Dieser kann mit Hilfe eines Messverstärkers sichtbar gemacht werden.</p>
+<p>Da der Photoeffekt nicht mit Hilfe des Wellenmodells erklärt werden kann, muss an dieser Stelle das Teilchenmodell des Lichtes zur Hilfe genommen werden.
+Im Teilchenbild interpretiert man das Licht als einen Teilchenstrom. Die einzelnen Lichtteilchen werden als Photonen bezeichnet.
+Ein Photon besitzt Teilcheneigenschaften, wie Masse und Impuls.</p>
+<p><strong>Funktionale Zusammenhänge</strong> (Ohne Herleitung)</p>
+<p>Es kann gezeigt werden, dass die Energie eines Photons linear mit der zugehörigen Frequenz zusammenhängt, die Proportionaliätskonstante dieses Zusammenhangs ist das sogenannte Plank’sche Wirkungsquantum und wird mit <span class="math notranslate nohighlight">\(h\)</span> bezeichnet. Im Teilchenmodell gelten für das Photon folgende Teilcheneigenschaften:</p>
+<p><strong>Energie</strong> <span class="math notranslate nohighlight">\(E = h \cdot f\)</span> mit <span class="math notranslate nohighlight">\(h = 6.626 \cdot 10^{-34} \, Js\)</span> (Planck’sches Wirkungsquantum)</p>
+<p><strong>Impuls</strong> <span class="math notranslate nohighlight">\(p = \frac{E}{c} = \frac{h \cdot f}{c}\)</span></p>
+<p><strong>Masse</strong> <span class="math notranslate nohighlight">\(m = \frac{E}{c^2} = \frac{h \cdot f}{c^2} \)</span></p>
+<section id="gegenfeldmethode">
+<h2><span class="section-number">2.1. </span>Gegenfeldmethode<a class="headerlink" href="#gegenfeldmethode" title="Permalink to this heading">#</a></h2>
+<p>Genauer kann der Fotoeffekt mit der sogenannten Gegenfeldmethode vermessen werden (siehe <a class="reference internal" href="#photo-3"><span class="std std-numref">Abbildung 2.19</span></a>).</p>
+<figure class="align-default" id="photo-3">
+<a class="reference internal image-reference" href="../../_images/Photoeffekt_gegenfeldmethode_neu.png"><img alt="Photoeffekt" src="../../_images/Photoeffekt_gegenfeldmethode_neu.png" style="width: 80%;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 2.19 </span><span class="caption-text">Gegenfeldmethode zur Bestimmung der Kenngrößen des Photoeffektes, Quelle: Jkrieger - CC BY-SA 3.0, <a class="reference external" href="https://commons.wikimedia.org/w/index.php?curid=18130611">https://commons.wikimedia.org/w/index.php?curid=18130611</a></span><a class="headerlink" href="#photo-3" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<p>Die Gegenfeldmethode ist ein Verfahren, mit dem man die Geschwindigkeit und damit die Energie von geladenen Teilchen (Elektronen, Ionen) bestimmen kann.</p>
+<section id="theorie">
+<h3><span class="section-number">2.1.1. </span>Theorie<a class="headerlink" href="#theorie" title="Permalink to this heading">#</a></h3>
+<p>Die herausgelösten Elektronen haben die kinetische Energie <span class="math notranslate nohighlight">\(E_{kin}\)</span> und bewegen sich von der Photokathode weg in Richtung Auffanganode (das zuvor beschriebene Gitter). Das angelegte Gegenfeld hat eine Spannung <span class="math notranslate nohighlight">\(U\)</span>. Wenn ein elektrisch geladenes Teilchen sich in einem Spannungspotential bewegt, so verrichtet es dabei die Arbeit <span class="math notranslate nohighlight">\(W_e = U\cdot q\)</span>. Da die Elektronen die Ladung <span class="math notranslate nohighlight">\(e\)</span> haben, gilt:</p>
+<div class="math notranslate nohighlight">
+\[W_e = e\cdot U_0\]</div>
+<p>wobei <span class="math notranslate nohighlight">\(U_0\)</span> die angelegte Gegenspannung ist. Diese Gegenspannung kann geregelt werden und wird solange erhöht, bis gerade keine Photoelektronen mehr die Anode erreichen. Dann gilt</p>
+<div class="math notranslate nohighlight" id="equation-gegenfeld">
+<span class="eqno">(2.7)<a class="headerlink" href="#equation-gegenfeld" title="Permalink to this equation">#</a></span>\[
+\begin{equation}
+E_{kin} = W_e \Leftrightarrow \frac{1}{2} \,m \,v^2 = e\cdot U
+\end{equation}
+\]</div>
+<p>Daher kann also mit Hilfe der Abbremsspannung die Geschwindigkeit der Elektronen bestimmt werden.
+Aus Gleichung <a class="reference internal" href="#equation-gegenfeld">(2.7)</a> ergibt sich</p>
+<div class="math notranslate nohighlight">
+\[
+\begin{equation}
+v = \sqrt{\frac{2eU}{m}}
+\end{equation}
+\]</div>
+<p>Dieses Experiment kann mit Hilfe von Filtern, welche zwischen die Lampe und die Kathode gesetzt werden, für verschiedene Lichtfarben durchgeführt werden.
+Das Ergebnis eines derartigen Experimentes ist in <a class="reference internal" href="#photo-4"><span class="std std-numref">Abbildung 2.20</span></a> dargestellt.</p>
+<figure class="align-default" id="photo-4">
+<a class="reference internal image-reference" href="../../_images/Photoelectric_effect_diagram.png"><img alt="Photoeffekt" src="../../_images/Photoelectric_effect_diagram.png" style="width: 80%;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 2.20 </span><span class="caption-text">Gegenfeldmethode zur Bestimmung der Kenngrößen des Photoeffektes, Quelle: Klaus-Dieter Keller, CC BY 3.0, <a class="reference external" href="https://commons.wikimedia.org/w/index.php?curid=24751457">https://commons.wikimedia.org/w/index.php?curid=24751457</a></span><a class="headerlink" href="#photo-4" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<p>Folgende Zusammenhänge sind erkennbar:</p>
+<ul class="simple">
+<li><p>Die maximale Gegenspannung (und damit die Energie der schnellsten Fotoelektronen) hängt von der Frequenz des eingestrahlten Lichts ab, nicht aber von der Intensität.</p></li>
+<li><p>Je größer die Frequenz des eingestrahlten Lichts ist, umso größer ist die maximale kinetische Energie der Fotoelektronen.</p></li>
+<li><p>Die Intensität bestimmt die Größe des Fotostroms, nicht aber die notwendige Gegenspannung, bei der dieser auf Null absinkt.</p></li>
+</ul>
+<p>Die Grenzfrequenz, bei der Photoelektronen ausgelöst werden ist natürlich materialabhängig, das heisst bei einem anderen Material als Zink, würde diese an einer anderen Frequenz liegen.</p>
+<p>Die Energie eines Photons, das ein Elektron ausgelöst hat, wird in der Regel größer sein als die Auslösearbeit. Die überschüssige Energie wird in kinetische Energie des Photoelektrons umgewandelt.</p>
+<div class="math notranslate nohighlight" id="equation-eq-einstein">
+<span class="eqno">(2.8)<a class="headerlink" href="#equation-eq-einstein" title="Permalink to this equation">#</a></span>\[
+\begin{equation}
+E_{Photon} = E_{kin} + W_A
+\end{equation}
+\]</div>
+<p>Diese Gleichung ist auch als Einsteingleichung bekannt, welcher für seine Arbeit zu Photonen mit dem Nobelpreis ausgezeichnet wurde.
+Mit Hilfe dieser Gleichung kann die Auslösearbeit bestimmt werden. Setzt man die von oben bekannten Ausdrücke in Gleichung <a class="reference internal" href="#equation-eq-einstein">(2.8)</a> ein, so erhält man</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{eqnarray}
+&amp;&amp; E_{kin} = E_{Photon} -W_A \nonumber \\
+&amp;\Leftrightarrow&amp; U \cdot e = h \cdot f - W_A 
+\end{eqnarray}(eq:wa)
+\end{split}\]</div>
+<p>Die kinetische Energie <span class="math notranslate nohighlight">\(U\cdot e\)</span> lässt sich also darstellen als lineare Funktion der Frequenz <span class="math notranslate nohighlight">\(f\)</span> mit y-Achsenabschnitt <span class="math notranslate nohighlight">\(W_A\)</span> darstellen. Durch Messung der kinetischen Energie der Photoelektronen bei verschiedenen Frequenzen des einfallenden Lichtes kann die Funktion bestimmt werden. Natürlich können nur für <span class="math notranslate nohighlight">\(E_{kin} &gt; 0\)</span> Messdaten genommen werden, da unterhalb dieser Schwelle keine Elektronen ausgelöst werden. Die Ausgleichsgrade durch diese Datenpunkte muss also extrapoliert werden, um den y-Achsenabschnitt zu bestimmen (siehe <a class="reference internal" href="#photo-4"><span class="std std-numref">Abbildung 2.20</span></a>). Für Zink ergibt sich damit</p>
+<div class="math notranslate nohighlight">
+\[W_{A,Zink} = -4.3 \, eV\]</div>
+</section>
+</section>
+<section id="innerer-photoeffekt">
+<h2><span class="section-number">2.2. </span>Innerer Photoeffekt<a class="headerlink" href="#innerer-photoeffekt" title="Permalink to this heading">#</a></h2>
+<p>Neben dem oben beschriebenen Photoeffekt, der auch äußerer Photoeffekt genannt wird, gibt es einen weiteren Photoeffekt, der etwas schwieriger zu beobachten, aber nicht weniger wichtig ist. Dies ist der innere Photoeffekt. Im Unterschied zum äußeren Photoeffekt, werden hier die Elektronen nicht aus dem Metall herausgelöst, sondern innerhalb eines Festkörpers auf ein höheres Energieniveau angehoben.
+Dies spielt beispielsweise bei Halbleitern eine große Rolle, da hier Elektronen vom Valenzband ins Leitungsband angehoben werden und der zuvor nicht leitende Halbleiter zum Leiter wird (siehe <a class="reference internal" href="#innerer-photo"><span class="std std-numref">Abbildung 2.21</span></a>).</p>
+<figure class="align-default" id="innerer-photo">
+<a class="reference internal image-reference" href="../../_images/innerer_photo.png"><img alt="Photoeffekt" src="../../_images/innerer_photo.png" style="width: 80%;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 2.21 </span><span class="caption-text">Schematische Darstellung des inneren Photoeffektes</span><a class="headerlink" href="#innerer-photo" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-default" id="r-foto">
+<a class="reference internal image-reference" href="../../_images/LDR.png"><img alt="Photoeffekt" src="../../_images/LDR.png" style="width: 80%;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 2.22 </span><span class="caption-text">Fotowiderstand, Quelle: Ulfbastel - CC BY-SA 4.0, <a class="reference external" href="https://commons.wikimedia.org/w/index.php?curid=92806797">https://commons.wikimedia.org/w/index.php?curid=92806797</a></span><a class="headerlink" href="#r-foto" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<p>Ein Fotowiderstand (siehe <a class="reference internal" href="#r-foto"><span class="std std-numref">Abbildung 2.22</span></a>) ist solch ein homogener Halbleiter, bei dem der innere Fotoeffekt ausgenutzt wird. Häufig wird Silizium hierzu eingesetzt.
+Bei Silizium beträgt die Bandlücke zwischen Valenz- und Leitungsband <span class="math notranslate nohighlight">\(W_{Band} = 1.1 \, eV\)</span>. Photonen mit der Frequenz</p>
+<div class="math notranslate nohighlight">
+\[f &gt; \frac{W_{Band}}{h} \approx 2,4 \cdot 10^14 \,Hz\]</div>
+<p>lösen hier den inneren Fotoeffekt aus. Diese Frequenz entspricht einer Wellenlänge von</p>
+<div class="math notranslate nohighlight">
+\[ \lambda = \frac{c}{f} = 1200 \, \longrightarrow \text{ infrarot }\]</div>
+<p>Wird der Fotowiderstand mit Licht mit dieser oder einer geringeren Wellenlänge bestrahlt, werden Elektronen aus dem Valenzband in das Leitungsband gehoben und der Fotowiderstand wird leitend.</p>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./book/Licht_Teilchenmodell"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+                <footer class="bd-footer-article">
+                  <!-- Previous / next buttons -->
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="teilchenmodell.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title"><span class="section-number">1. </span>Teilchenmodell</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="comptoneffekt.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title"><span class="section-number">3. </span>Comptoneffekt</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#gegenfeldmethode">2.1. Gegenfeldmethode</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#theorie">2.1.1. Theorie</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#innerer-photoeffekt">2.2. Innerer Photoeffekt</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            <div class="bd-footer-content__inner">
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Simone Arnold
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+<div class="extra_footer">
+  <p>
+<img src='https://mirrors.creativecommons.org/presskit/buttons/88x31/svg/by-nc-sa.svg' height='31'/>
+| Contacts and Infos: <a href='https://www.fh-dortmund.de/personen/Simone-Arnold/index.php'>Simone Arnold@FH Dortmund</a>
+</br>Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</p>
+
+</div>
+  </div>
+  
+</div></div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../_static/scripts/bootstrap.js?digest=12da95d707ffb74b382d"></script>
+<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=12da95d707ffb74b382d"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

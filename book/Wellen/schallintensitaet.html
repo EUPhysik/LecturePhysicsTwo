@@ -1,0 +1,558 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="en" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>5. Schallintensität &#8212; Skript Physik 2</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=12da95d707ffb74b382d" rel="stylesheet" />
+<link href="../../_static/styles/bootstrap.css?digest=12da95d707ffb74b382d" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=12da95d707ffb74b382d" rel="stylesheet" />
+
+  
+  <link href="../../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=12da95d707ffb74b382d" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" href="../../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=12da95d707ffb74b382d" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=12da95d707ffb74b382d" />
+
+    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/clipboard.min.js"></script>
+    <script src="../../_static/copybutton.js"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'book/Wellen/schallintensitaet';</script>
+    <link rel="canonical" href="https://euphysik.github.io/LecturePhysicsTwo/book/Wellen/schallintensitaet.html" />
+    <link rel="shortcut icon" href="../../_static/physics_icon_small.png"/>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="6. Dopplereffekt" href="welleneffekte.html" />
+    <link rel="prev" title="4. Wellenausbreitung" href="wellenausbreitung.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+  
+
+<a class="navbar-brand logo" href="../../intro.html">
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../../_static/FB3_ET-Logo.png" class="logo__image only-light" alt="Logo image"/>
+    <script>document.write(`<img src="../../_static/FB3_ET-Logo.png" class="logo__image only-dark" alt="Logo image"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Schwingungen</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../Schwingungen/schwingungen1.html">1. Was sind Schwingungen?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Schwingungen/mechanische_schwingungen.html">2. Mechanische Schwingungen</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Schwingungen/federpendel.html">3. Federpendel</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Schwingungen/gedaempfte_schwingung.html">4. Gedämpfte Schwingung</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Schwingungen/erzwungene_schwingung.html">5. Erzwungene Schwingung</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Schwingungen/mathematisches_pendel.html">6. Mathematisches Pendel</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Schwingungen/physikalisches_pendel.html">7. Physikalisches Pendel</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Wellen</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="wellen.html">1. Was sind Wellen?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="transversalwellen.html">2. Transversalwellen</a></li>
+<li class="toctree-l1"><a class="reference internal" href="longitudinalwellen.html">3. Longitudinalwellen</a></li>
+<li class="toctree-l1"><a class="reference internal" href="wellenausbreitung.html">4. Wellenausbreitung</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">5. Schallintensität</a></li>
+<li class="toctree-l1"><a class="reference internal" href="welleneffekte.html">6. Dopplereffekt</a></li>
+<li class="toctree-l1"><a class="reference internal" href="wellenausbreitung2.html">7. Wellenausbreitung an Hindernissen</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ueberlagerung.html">8. Überlagerung von Wellen</a></li>
+<li class="toctree-l1"><a class="reference internal" href="schwebung.html">9. Schwebung</a></li>
+<li class="toctree-l1"><a class="reference internal" href="stehende_wellen.html">10. Stehende Wellen</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Licht im Wellenmodell</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../Licht/licht.html">1. Licht</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Licht/licht_grundlagen.html">2. Grundlagen</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Licht/licht_reflexion.html">3. Reflexion</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Licht/licht_brechung.html">4. Brechung</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Licht/licht_totalreflexion.html">5. Totalreflexion</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Licht/licht_dispersion.html">6. Dispersion</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Licht/licht_polarisation.html">7. Polarisation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Licht/licht_luftspiegelung_fatamorgana.html">8. Effekte durch variable Brechung</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Geometrische Optik</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../geometrische_Optik/geometrischeoptik.html">1. Geometrische Optik</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../geometrische_Optik/spiegel.html">2. Spiegel</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../geometrische_Optik/linsen.html">3. Linsen</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../geometrische_Optik/lupe.html">4. Optische Instrumente</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Interferenz</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../Interferenz/beugung.html">1. Beugung</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Interferenz/einzelspalt.html">2. Interferenz an einem Spalt</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Interferenz/gitter.html">3. Interferenz am Gitter</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Interferenz/duenneschichten.html">4. Interferenz an dünnen Schichten</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Interferenz/newtonscheringe.html">5. Newton’sche Ringe</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Licht im Teilchenmodell</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../Licht_Teilchenmodell/teilchenmodell.html">1. Teilchenmodell</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Licht_Teilchenmodell/photoeffekt.html">2. Photoeffekt</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Licht_Teilchenmodell/comptoneffekt.html">3. Comptoneffekt</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Spektrometrie</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../Spektrometrie/spektrometrie.html">1. Spektrometrie</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/EUPhysik/LecturePhysicsTwo.git" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/EUPhysik/LecturePhysicsTwo.git/edit/main/book/book/Wellen/schallintensitaet.md" target="_blank"
+   class="btn btn-sm btn-source-edit-button dropdown-item"
+   title="Suggest edit"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-pencil-alt"></i>
+  </span>
+<span class="btn__text-container">Suggest edit</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/EUPhysik/LecturePhysicsTwo.git/issues/new?title=Issue%20on%20page%20%2Fbook/Wellen/schallintensitaet.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../../_sources/book/Wellen/schallintensitaet.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+<script>
+document.write(`
+  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
+    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
+    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  </button>
+`);
+</script>
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+  </button>
+`);
+</script>
+
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Schallintensität</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="schallintensitat">
+<h1><span class="section-number">5. </span>Schallintensität<a class="headerlink" href="#schallintensitat" title="Permalink to this heading">#</a></h1>
+<p>Schallwellen breiten sich aus, wie <a class="reference internal" href="wellenausbreitung.html"><span class="doc std std-doc">hier</span></a> beschrieben. Dabei kann in vielen Fällen die Schallquelle als annähernd punktförmig betrachtet werden.
+Dies bedeutet aber auch, dass die Leistung, mit der die Quelle die Welle aussendet, sich von der punktförmigen Quelle auf die ensprechende Fläche, die die Wellenfronten im Abstand <span class="math notranslate nohighlight">\(r\)</span> von der Quelle haben, ausbreitet.
+Daher wird für praktische Betrachtungen oft die Schallntensität betrachtet. Die Schallintensität bezeichnet die Schallleistung, die je Flächeneinheit durch eine durchschallte Fläche tritt. Sie nimmt daher mit größerem Abstand zur Quelle ab.</p>
+<p><strong>Definition:</strong>
+Die mittlere Leistungsdichte, die auf eine Fläche A senkrecht zur Ausbreitungsrichtung auftrifft, bezeichnet man als Intensität <span class="math notranslate nohighlight">\(I\)</span> der Welle</p>
+<div class="math notranslate nohighlight">
+\[I = \frac{\left&lt;P\right&gt;}{A}\]</div>
+<p>Die Schallintensität wird demnach in <span class="math notranslate nohighlight">\(\frac{W}{m^2}\)</span> gemessen.</p>
+<p>Bei einer Ausbreitung im dreidimensionalen Raum, die gleichmässig in alle Richtungen verläuft (Kugelwelle), gilt</p>
+<div class="math notranslate nohighlight">
+\[ I = \frac{\left&lt;P\right&gt;}{A} = \frac{\left&lt;P\right&gt;}{4 \pi r^2} =  \frac{\left&lt;E\right&gt;}{\Delta t \cdot 4 \pi r^2} = \left&lt;w\right&gt; v\]</div>
+<p>mit der mittleren Energiedichte <span class="math notranslate nohighlight">\(\left&lt;w\right&gt; = \frac{\Delta E}{\Delta V}\)</span>.</p>
+<p>Betrachtet man eine nicht kugelförmige Ausbreitung, muss eine entsprechende angepasste Fläche betrachtet werden. Hängt beispielsweise ein Lautsprecher an der Wand, breitet sich eine halbkugelförmige Welle aus, dann ist <span class="math notranslate nohighlight">\(A = 2 \pi r\)</span>.</p>
+<p>Die Intensität wird bei Schallwellen auch Schallstärke bezeichnet.</p>
+<p>Die mittlere transportierte Energie einer Schallwelle ist</p>
+<div class="math notranslate nohighlight">
+\[\left&lt; E\right&gt; = \frac{1}{2} \rho_0 \omega^2 s_{max}^2 \Delta V \Rightarrow  \left&lt;w \right&gt; = \frac{1}{2} \rho_0 \omega^2 s_{max}^2\]</div>
+<p>Damit lässt sich die Schallintensität auch schreiben als</p>
+<div class="math notranslate nohighlight">
+\[I = \left&lt;w\right&gt; v_s = \frac{1}{2} \rho_0 \omega^2 s_{max}^2 v_S = \frac{p_{max}^2}{2 \rho_o v_S}\]</div>
+<p>mit <span class="math notranslate nohighlight">\(p_{max} = s_{smax} \rho_o \omega v_S\)</span></p>
+<p>Die zugehörige logarithmische Größe ist der Schallintensitätspegel, der oft angegeben wird um Schallbelastungen zu klassifizieren.
+Hierbei wird die Schallintensität mit der Hörschwelle des menschlichen Ohres verglichen.</p>
+<div class="math notranslate nohighlight">
+\[\text{IP} = (10 \, dB) \cdot log \left(\frac{I}{I_0}\right)\]</div>
+<p>mit <span class="math notranslate nohighlight">\(I_{0} = 10^{-12} \frac{W}{m^2}\)</span> und <span class="math notranslate nohighlight">\(\left[\text{IP}\right] = dB\)</span></p>
+<p>Bei der Hörschwelle ist demnach <span class="math notranslate nohighlight">\(\text{IP} = 0 \,dB\)</span>, die Schmerzgrenze liegt bei <span class="math notranslate nohighlight">\(\text{IP} = 120\, dB\)</span>.</p>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./book/Wellen"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+                <footer class="bd-footer-article">
+                  <!-- Previous / next buttons -->
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="wellenausbreitung.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title"><span class="section-number">4. </span>Wellenausbreitung</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="welleneffekte.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title"><span class="section-number">6. </span>Dopplereffekt</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            <div class="bd-footer-content__inner">
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Simone Arnold
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+<div class="extra_footer">
+  <p>
+<img src='https://mirrors.creativecommons.org/presskit/buttons/88x31/svg/by-nc-sa.svg' height='31'/>
+| Contacts and Infos: <a href='https://www.fh-dortmund.de/personen/Simone-Arnold/index.php'>Simone Arnold@FH Dortmund</a>
+</br>Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</p>
+
+</div>
+  </div>
+  
+</div></div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../_static/scripts/bootstrap.js?digest=12da95d707ffb74b382d"></script>
+<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=12da95d707ffb74b382d"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

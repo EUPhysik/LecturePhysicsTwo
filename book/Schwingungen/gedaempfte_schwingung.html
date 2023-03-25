@@ -1,0 +1,691 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="en" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>4. Gedämpfte Schwingung &#8212; Skript Physik 2</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=12da95d707ffb74b382d" rel="stylesheet" />
+<link href="../../_static/styles/bootstrap.css?digest=12da95d707ffb74b382d" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=12da95d707ffb74b382d" rel="stylesheet" />
+
+  
+  <link href="../../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=12da95d707ffb74b382d" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" href="../../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=12da95d707ffb74b382d" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=12da95d707ffb74b382d" />
+
+    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/clipboard.min.js"></script>
+    <script src="../../_static/copybutton.js"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'book/Schwingungen/gedaempfte_schwingung';</script>
+    <link rel="canonical" href="https://euphysik.github.io/LecturePhysicsTwo/book/Schwingungen/gedaempfte_schwingung.html" />
+    <link rel="shortcut icon" href="../../_static/physics_icon_small.png"/>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="5. Erzwungene Schwingung" href="erzwungene_schwingung.html" />
+    <link rel="prev" title="3. Federpendel" href="federpendel.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+  
+
+<a class="navbar-brand logo" href="../../intro.html">
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../../_static/FB3_ET-Logo.png" class="logo__image only-light" alt="Logo image"/>
+    <script>document.write(`<img src="../../_static/FB3_ET-Logo.png" class="logo__image only-dark" alt="Logo image"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Schwingungen</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="schwingungen1.html">1. Was sind Schwingungen?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="mechanische_schwingungen.html">2. Mechanische Schwingungen</a></li>
+<li class="toctree-l1"><a class="reference internal" href="federpendel.html">3. Federpendel</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">4. Gedämpfte Schwingung</a></li>
+<li class="toctree-l1"><a class="reference internal" href="erzwungene_schwingung.html">5. Erzwungene Schwingung</a></li>
+<li class="toctree-l1"><a class="reference internal" href="mathematisches_pendel.html">6. Mathematisches Pendel</a></li>
+<li class="toctree-l1"><a class="reference internal" href="physikalisches_pendel.html">7. Physikalisches Pendel</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Wellen</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../Wellen/wellen.html">1. Was sind Wellen?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Wellen/transversalwellen.html">2. Transversalwellen</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Wellen/longitudinalwellen.html">3. Longitudinalwellen</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Wellen/wellenausbreitung.html">4. Wellenausbreitung</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Wellen/schallintensitaet.html">5. Schallintensität</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Wellen/welleneffekte.html">6. Dopplereffekt</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Wellen/wellenausbreitung2.html">7. Wellenausbreitung an Hindernissen</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Wellen/ueberlagerung.html">8. Überlagerung von Wellen</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Wellen/schwebung.html">9. Schwebung</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Wellen/stehende_wellen.html">10. Stehende Wellen</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Licht im Wellenmodell</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../Licht/licht.html">1. Licht</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Licht/licht_grundlagen.html">2. Grundlagen</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Licht/licht_reflexion.html">3. Reflexion</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Licht/licht_brechung.html">4. Brechung</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Licht/licht_totalreflexion.html">5. Totalreflexion</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Licht/licht_dispersion.html">6. Dispersion</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Licht/licht_polarisation.html">7. Polarisation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Licht/licht_luftspiegelung_fatamorgana.html">8. Effekte durch variable Brechung</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Geometrische Optik</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../geometrische_Optik/geometrischeoptik.html">1. Geometrische Optik</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../geometrische_Optik/spiegel.html">2. Spiegel</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../geometrische_Optik/linsen.html">3. Linsen</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../geometrische_Optik/lupe.html">4. Optische Instrumente</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Interferenz</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../Interferenz/beugung.html">1. Beugung</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Interferenz/einzelspalt.html">2. Interferenz an einem Spalt</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Interferenz/gitter.html">3. Interferenz am Gitter</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Interferenz/duenneschichten.html">4. Interferenz an dünnen Schichten</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Interferenz/newtonscheringe.html">5. Newton’sche Ringe</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Licht im Teilchenmodell</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../Licht_Teilchenmodell/teilchenmodell.html">1. Teilchenmodell</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Licht_Teilchenmodell/photoeffekt.html">2. Photoeffekt</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Licht_Teilchenmodell/comptoneffekt.html">3. Comptoneffekt</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Spektrometrie</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../Spektrometrie/spektrometrie.html">1. Spektrometrie</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/EUPhysik/LecturePhysicsTwo.git" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/EUPhysik/LecturePhysicsTwo.git/edit/main/book/book/Schwingungen/gedaempfte_schwingung.md" target="_blank"
+   class="btn btn-sm btn-source-edit-button dropdown-item"
+   title="Suggest edit"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-pencil-alt"></i>
+  </span>
+<span class="btn__text-container">Suggest edit</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/EUPhysik/LecturePhysicsTwo.git/issues/new?title=Issue%20on%20page%20%2Fbook/Schwingungen/gedaempfte_schwingung.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../../_sources/book/Schwingungen/gedaempfte_schwingung.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+<script>
+document.write(`
+  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
+    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
+    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  </button>
+`);
+</script>
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Gedämpfte Schwingung</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#schwache-dampfung">4.1. Schwache Dämpfung</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#q-faktor">4.1.1. Q-Faktor</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lehr-sches-dampfungsmasz">4.1.2. Lehr’sches Dämpfungsmaß</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#aperiodischer-grenzfall">4.2. Aperiodischer Grenzfall</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#starke-dampfung">4.3. Starke Dämpfung</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="gedampfte-schwingung">
+<h1><span class="section-number">4. </span>Gedämpfte Schwingung<a class="headerlink" href="#gedampfte-schwingung" title="Permalink to this heading">#</a></h1>
+<p>Bislang wurde ein reibungsfreies Federpendel betrachtet. In Realität stellt dies natürlich nur eine Näherung dar, da immer Reibungskräfte auftreten.
+Der Einfluss von solchen Reibungskräften auf die Pendelbewegung wird im folgenden betrachtet.</p>
+<p>Reibung führt dazu, dass ein Teil der Energie in Wärme umgewandelt wird. Dem schwingenden System wird daher durch Reibungskräfte mechanische Energie entzogen.
+Daher nimmt bei einer realen Schwingung die mechanische Energie mit der Zeit ab.
+Diesen Effekt nennt man Dämpfung und die entsprechende Schwingung dazu nennt man gedämpfte Schwingung.</p>
+<p>Diese Reibungskraft kann durch das <a class="reference external" href="https://de.wikipedia.org/wiki/Gesetz_von_Stokes">Gesetz von Stokes</a> beschrieben werden.</p>
+<div class="math notranslate nohighlight">
+\[F_R = - \beta \cdot v = -\beta \cdot \frac{dx}{dt}\]</div>
+<p>Hierbei ist <span class="math notranslate nohighlight">\(\beta\)</span> eine Konstante, die vom Partikelradius und der <a class="reference external" href="https://de.wikipedia.org/wiki/Viskosit%C3%A4t">Viskosität</a> abhängt.
+Die Reibungskraft wird als der Bewegung proportional zur Geschwindigkeit entgegen.</p>
+<p>Die Kräftebilanz des ungedämpften Falles muss daher nun um diesen Term erweitert werden, um die gedämpfte Schwingung zu betrachten.</p>
+<div class="math notranslate nohighlight">
+\[m \ddot{x} = - \beta \dot{x} - kx\]</div>
+<p>oder auch</p>
+<div class="math notranslate nohighlight">
+\[\ddot{x} + \frac{\beta}{m} \dot{x} - \frac{k}{m}x = 0\]</div>
+<p>mit <span class="math notranslate nohighlight">\(\delta = \frac{\beta}{2m}\)</span> und <span class="math notranslate nohighlight">\(\omega_0 = \sqrt{\frac{k}{m}}\)</span> wird die Differentialgleichung zu</p>
+<div class="math notranslate nohighlight" id="equation-dgl-damp">
+<span class="eqno">(4.1)<a class="headerlink" href="#equation-dgl-damp" title="Permalink to this equation">#</a></span>\[ \frac{d^2x}{dt^2} + 2\delta\frac{dx}{dt} + \omega_0^2 x = 0\]</div>
+<p>Die Lösung dieser Differentialgleichung liefert die Bewegungsgleichung für die gedämpfte Schwingung.</p>
+<p>Als Lösungsansatz kann in diesem Fall wieder eine e-Funktion verwendet werden.</p>
+<div class="math notranslate nohighlight">
+\[x(t) = A\cdot e^{\lambda t} \]</div>
+<div class="math notranslate nohighlight">
+\[\Rightarrow \frac{dx}{dt} = A\lambda e^{\lambda t}\]</div>
+<div class="math notranslate nohighlight">
+\[\Rightarrow \frac{d^2x}{dt^2} = A\lambda^2 e^{\lambda t}\]</div>
+<p>Eingesetzt in die Differentialgleichung ergibt sich</p>
+<div class="math notranslate nohighlight">
+\[A\lambda^2 e^{\lambda t} + 2\delta A\lambda e^{\lambda t} + \omega_0^2 A e^{\lambda t} = 0 \Leftrightarrow \left(\lambda^2 + 2\delta \lambda + \omega_0^2  \right) \cdot A\cdot e^{\lambda t} = 0\]</div>
+<p>Damit dies für alle Zeiten <span class="math notranslate nohighlight">\(t\)</span> gültig ist, muss</p>
+<div class="math notranslate nohighlight">
+\[\lambda^2 + 2\delta \lambda + \omega_0^2 =0 \]</div>
+<p>gelten. Diese quadratische Gleichung hat zwei Lösungen, nämlich</p>
+<div class="math notranslate nohighlight">
+\[\lambda_{1,2} = -\frac{p}{2} \pm \sqrt{\left(\frac{p}{2} \right)^2 - q}
+= -\delta \pm \sqrt{\delta^2 - \omega_0^2}\]</div>
+<p>mit <span class="math notranslate nohighlight">\(p = 2 \delta\)</span> und <span class="math notranslate nohighlight">\(q = \omega_0^2 = \sqrt{\frac{k}{m}}\)</span>.</p>
+<p>Die allgemeine Lösung der Differentialgleichung ist die Summe aller möglichen Lösungen. Damit ist</p>
+<div class="math notranslate nohighlight" id="equation-lsg-dgl-damping">
+<span class="eqno">(4.2)<a class="headerlink" href="#equation-lsg-dgl-damping" title="Permalink to this equation">#</a></span>\[x(t) = A_1 e^{\lambda_1 t}+ A_2 e^{\lambda_2 t}= A_1 e^{\left( -\delta + \sqrt{\delta^2 - \omega_0^2} \right) t}+ A_2 e^{\left( -\delta - \sqrt{\delta^2 - \omega_0^2}\right) t}\]</div>
+<p>Nun muss eine Fallunterscheidung durchgeführt werden, da es einen Unterschied macht, ob der Exponent der e-Funktion imaginär ist, oder reell. Ist der Exponent imaginär, liegt eine Schwingung vor, beim reellen Exponenten jedoch nicht.</p>
+<section id="schwache-dampfung">
+<h2><span class="section-number">4.1. </span>Schwache Dämpfung<a class="headerlink" href="#schwache-dampfung" title="Permalink to this heading">#</a></h2>
+<p>Ist die Dämpfung schwach, so ist <span class="math notranslate nohighlight">\(\delta &lt; \omega_0\)</span>. Dies bedeutet aber auch, dass <span class="math notranslate nohighlight">\(\delta^2 - \omega_0^2 &lt;0\)</span> ist. Dann lässt sich der Exponent der e-Funktion in <a class="reference internal" href="#equation-lsg-dgl-damping">(4.2)</a> schreiben als</p>
+<p><span class="math notranslate nohighlight">\(\sqrt{\delta^2 - \omega_0^2} = \sqrt{(-1)\cdot(\omega_0^2 -\delta^2)} = i\sqrt{\omega_0^2 -\delta^2}\)</span> mit <span class="math notranslate nohighlight">\(\omega_0^2 - \delta^2 &gt; 0\)</span>.</p>
+<p>Mit den Anfangsbedingungen</p>
+<div class="math notranslate nohighlight">
+\[x\left(t = 0\right) =  \hat{x} \text{ und } x \left( t\cdot \omega_0 = \frac{\pi}{2}\right)\]</div>
+<p>ergibt sich für die schwach gedämpfte Schwingung die Bewegungsgleichung</p>
+<div class="math notranslate nohighlight">
+\[\Rightarrow x(t) = A_1 e^{-\delta t} \cdot e^{\left( i \sqrt{\omega_0^2 - \delta^2} \right) t}
++ A_2 e^{-\delta t} \cdot e^{\left(- i \sqrt{\omega_0^2 - \delta^2}\right) t} = \hat{x}e^{-\delta t} \cdot \text{cos} \left( \sqrt{\delta^2 - \omega_0^2} t
+\right)\]</div>
+<p>mit <span class="math notranslate nohighlight">\(\text{cos} \left(\phi \right) = \frac{1}{2}\left(e^{i\phi}  + e^{-i\phi}\right)\)</span> und <span class="math notranslate nohighlight">\(\hat{y} = 2 A\)</span>.</p>
+<p>Die Bewegung des gedämpften harmonischer Oszillators ist in dem Video <a class="reference internal" href="#osz-3"><span class="std std-numref">Abbildung 4.1</span></a> dargestellt. Die ungedämpfte Schwingung ist zum Vergleich durchscheinend dargestellt. Wie erwartet, nimmt die Amplitude der Schwingung ab, interessant ist jedoch, dass auch die Frequenz der Schwingung sich verändert.</p>
+<figure class="align-default" id="osz-3">
+<a class="reference internal image-reference" href="../../_images/harm-osz-damp.mp4"><video src="../../_images/harm-osz-damp.mp4" title="Federpendel" width="100%"><a href="../../_images/harm-osz-damp.mp4">Federpendel</a></video></a>
+<figcaption>
+<p><span class="caption-number">Fig. 4.1 </span><span class="caption-text">Bewegung des schwach gedämpften harmonischer Oszillators.</span><a class="headerlink" href="#osz-3" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<p>Die Amplitude der gedämpften Schwingung ist</p>
+<div class="math notranslate nohighlight">
+\[\hat{x}_{gedämpft} = \hat{x} \cdot e^{-\delta \cdot t} \]</div>
+<p>und die Frequenz der gedämpften Schwingung ist</p>
+<div class="math notranslate nohighlight">
+\[\omega_d = \sqrt{\omega_0^2 = \delta^2} \]</div>
+<p>und die Dämpfungskonstante ist <span class="math notranslate nohighlight">\(\delta = \frac{\beta}{2m}\)</span></p>
+<p>Und die Energie des gedämpften harmonischen Oszillators ist dann</p>
+<div class="math notranslate nohighlight">
+\[E_{mech} \approx \frac{1}{2} m \omega^2 \hat{x} e^{-2\delta \cdot t} =: E_{mech, \delta = 0}e^{-\frac{t}{\tau}}\]</div>
+<p>mit <span class="math notranslate nohighlight">\(E_{mech, \delta = 0} = \frac{1}{2}k \hat{x}^2\)</span> und <span class="math notranslate nohighlight">\(\tau = \frac{2}{\delta} = \frac{m}{k}\)</span>.</p>
+<p><span class="math notranslate nohighlight">\(\tau\)</span> wird auch als Zeitkonstante bezeichnet.</p>
+<section id="q-faktor">
+<h3><span class="section-number">4.1.1. </span>Q-Faktor<a class="headerlink" href="#q-faktor" title="Permalink to this heading">#</a></h3>
+<p>Der gedämpfte Oszillator wird häufig durch einen sogenannten Gütefaktor (nach der englischen Bezeichnung quality factor auch als Q-Faktor bezeichnet) charakterisiert mit <span class="math notranslate nohighlight">\(Q = \omega_0 \tau\)</span>.</p>
+<p>Der Q-Faktor ist umgekehrt proportional zu dem relativen Energieverlust während einer Schwingung.</p>
+<div class="math notranslate nohighlight">
+\[Q = \frac{1}{\left(\frac{\Delta E_{mech}}{E_{mech}} \right)_{Schwingungsdauer}}\]</div>
+</section>
+<section id="lehr-sches-dampfungsmasz">
+<h3><span class="section-number">4.1.2. </span>Lehr’sches Dämpfungsmaß<a class="headerlink" href="#lehr-sches-dampfungsmasz" title="Permalink to this heading">#</a></h3>
+<p>Oft wird auch das sogenannte Lehr’sches Dämpfungsmaß angegeben, es ist definiert als</p>
+<div class="math notranslate nohighlight">
+\[D = \frac{\delta}{\omega_0}\]</div>
+</section>
+</section>
+<section id="aperiodischer-grenzfall">
+<h2><span class="section-number">4.2. </span>Aperiodischer Grenzfall<a class="headerlink" href="#aperiodischer-grenzfall" title="Permalink to this heading">#</a></h2>
+<p>Gleichung <a class="reference internal" href="#equation-lsg-dgl-damping">(4.2)</a> erreicht einen Spezialfall, wenn <span class="math notranslate nohighlight">\(\delta = \omega_0\)</span> ist. Dann wird die Lösung der Differentialgleichung zu</p>
+<div class="math notranslate nohighlight">
+\[x(t) = A_1 e^{\left( -\delta  \right) t}\]</div>
+<p>und damit mir den Anfangsbedingungen</p>
+<div class="math notranslate nohighlight">
+\[x\left(t = 0\right) =  \hat{x} \text{ und } x \left( t\cdot \omega_0 = \frac{\pi}{2}\right)\]</div>
+<p>zu</p>
+<div class="math notranslate nohighlight">
+\[x(t) = \hat{x}e^{-\delta t}\]</div>
+<p>In diesem Fall schwingt das Pendel nicht mehr, sondern kehrt in minimaler Zeit zur Ruhelage zurück.</p>
+<p>Im aperiodischen Grenzfall gilt</p>
+<div class="math notranslate nohighlight">
+\[\frac{k}{m} - \left(\frac{\beta}{2m}\right)^2=0 \Leftrightarrow \left(\frac{\beta}{2m}\right)^2 = \frac{k}{m} \Leftrightarrow \beta = 2m \sqrt{\frac{k}{m}}=2 \sqrt{km}\]</div>
+<figure class="align-default" id="osz-4">
+<a class="reference internal image-reference" href="../../_images/uebergang_zum_kriechfall.png"><img alt="Federpendel" src="../../_images/uebergang_zum_kriechfall.png" style="width: 100%;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 4.2 </span><span class="caption-text">Übergang der gedämpften Schwingung zum Kriechfall.</span><a class="headerlink" href="#osz-4" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="starke-dampfung">
+<h2><span class="section-number">4.3. </span>Starke Dämpfung<a class="headerlink" href="#starke-dampfung" title="Permalink to this heading">#</a></h2>
+<p>Wenn die Dämpfung noch stärker wird, wird die Bewegungsgleichung zu</p>
+<div class="math notranslate nohighlight">
+\[\Rightarrow x(t) = \hat{x}e^{-\delta t} \cdot \left(e^{\sqrt{\delta^2 - \omega_0^2 } t} + e^{-\delta t} \cdot e^{- \sqrt{ \delta^2 - \omega_0^2} t} \right)\]</div>
+<figure class="align-default" id="osz-5">
+<a class="reference internal image-reference" href="../../_images/harm-osz-damp-strong.mp4"><video src="../../_images/harm-osz-damp-strong.mp4" title="Federpendel" width="100%"><a href="../../_images/harm-osz-damp-strong.mp4">Federpendel</a></video></a>
+<figcaption>
+<p><span class="caption-number">Fig. 4.3 </span><span class="caption-text">Starke Dämpfung im Vergleich zum aperiodischen Grenzfall.</span><a class="headerlink" href="#osz-5" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<p>Durch den Einsatz eine genügend starken Dämpfung ist es also möglich, eine Schwingung derart stark zu Dämpfen, das kein Schwingvorgang mehr zustandekommt. Dies wird beispielsweise bei <a class="reference external" href="https://de.wikipedia.org/wiki/Sto%C3%9Fd%C3%A4mpfer">Stoßdämpfern</a> genutzt.</p>
+<p>Eine schöne Visualisierung von gedämpften Schwingungen ist <a class="reference external" href="https://www.edumedia-sciences.com/de/media/449-gedampfte-schwingungen">hier</a> zu finden.</p>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./book/Schwingungen"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+                <footer class="bd-footer-article">
+                  <!-- Previous / next buttons -->
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="federpendel.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title"><span class="section-number">3. </span>Federpendel</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="erzwungene_schwingung.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title"><span class="section-number">5. </span>Erzwungene Schwingung</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#schwache-dampfung">4.1. Schwache Dämpfung</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#q-faktor">4.1.1. Q-Faktor</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#lehr-sches-dampfungsmasz">4.1.2. Lehr’sches Dämpfungsmaß</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#aperiodischer-grenzfall">4.2. Aperiodischer Grenzfall</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#starke-dampfung">4.3. Starke Dämpfung</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            <div class="bd-footer-content__inner">
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Simone Arnold
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+<div class="extra_footer">
+  <p>
+<img src='https://mirrors.creativecommons.org/presskit/buttons/88x31/svg/by-nc-sa.svg' height='31'/>
+| Contacts and Infos: <a href='https://www.fh-dortmund.de/personen/Simone-Arnold/index.php'>Simone Arnold@FH Dortmund</a>
+</br>Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</p>
+
+</div>
+  </div>
+  
+</div></div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../_static/scripts/bootstrap.js?digest=12da95d707ffb74b382d"></script>
+<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=12da95d707ffb74b382d"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

@@ -1,6 +1,0 @@
-**/*.bkp
-**/.ipynb_checkpoints
-**/.DS_Store
-.venv
-*~
-_build

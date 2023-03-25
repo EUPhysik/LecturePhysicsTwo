@@ -1,3 +1,0 @@
-# Schwingungen
-
-Was sind Schwingungen??
