@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="350" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+ <path d="m385.28 162.93-348.49 58.577 246.26-134.4-188.78 207.52 110.54-257.84-20.41 279.83-72.193-271.04 156.9 232.61-224.27-168.48 267.05 86.374-65.014 1.3165" fill="none" stroke="#1d71b8" stroke-dashoffset="6.3" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+ <path d="M 320.7,187.4 A 150,150 0 0 1 165.01,324.87 150,150 0 0 1 21.21,175 150,150 0 0 1 165,25.13 150,150 0 0 1 320.69,162.6" fill="none" stroke="#000" stroke-dashoffset="6.3" stroke-width="15"/>
+ <path id="b" d="m363.78 162.08-11.132 6.3284 12.58 2.3911c-2.1732-2.2184-2.7702-5.6076-1.448-8.7195z" fill="#1d71b8" stroke="#1d71b8" stroke-linejoin="round"/>
+ <g id="a">
+  <use transform="translate(-299.38 50.33)" xlink:href="#b"/>
+  <use transform="rotate(160.92 210.56 161.39)" xlink:href="#b"/>
+ </g>
+ <use transform="rotate(46.64 170.55 174.95)" xlink:href="#a"/>
+ <use transform="rotate(84.537 171.19 175.13)" xlink:href="#a"/>
+ <use transform="rotate(122.69 171.12 175.18)" xlink:href="#a"/>
+ <use transform="rotate(160.45 171.18 175.54)" xlink:href="#a"/>
+ <use transform="rotate(207.11 170.96 175.56)" xlink:href="#a"/>
+ <use transform="rotate(245.24 170.81 175.34)" xlink:href="#a"/>
+ <use transform="rotate(-76.564 170.7 175.3)" xlink:href="#a"/>
+ <use transform="rotate(-38.249 170.91 175)" xlink:href="#a"/>
+</svg>

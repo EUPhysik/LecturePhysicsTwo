@@ -1,0 +1,3 @@
+# Trigonometrie
+
+Was sind Schwingungen??
