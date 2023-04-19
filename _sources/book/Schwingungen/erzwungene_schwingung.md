@@ -100,7 +100,7 @@ $$\Leftrightarrow \phi = arctan \left(- \frac{2 \delta \omega}{\omega_0^2 - \ome
 
 Damit ist 
 
-$$\\left| \phi \right|= arctan \left( \frac{2 \delta \omega}{\omega_0^2 - \omega^2 } \right)$$
+$$\left| \phi \right|= arctan \left( \frac{2 \delta \omega}{\omega_0^2 - \omega^2 } \right)$$
 
 
 Mit Gleichung {eq}`gleichung-erz-1`$^2$ + Gleichung {eq}`gleichung-erz-2`$^2$ ergibt sich für die Amplitude der erzwungenen Schwingung:
