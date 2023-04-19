@@ -62,11 +62,11 @@ $$\Leftrightarrow
 = \frac{F}{m} e^{i\omega t}
 \Leftrightarrow
 \left(\omega_0^2 + 2\delta i \omega - \omega^2 \right)A e^{i\left( \omega t + \phi\right)}
-= \frac{F}{m} e^{i\left( \omega t + \phi\right)} e^{-\phi}$$
+= \frac{F}{m} e^{i\left( \omega t + \phi\right)} e^{-i\phi}$$
 
 Da die Gleichung für alle $t$ gilt, muss
 
-$$A\left(\omega_0^2 + 2\delta i \omega - \omega^2 \right)= \frac{F}{m}  e^{-\phi} = \frac{F}{m} \left(cos (\phi) + i sin (\phi)\right)$$
+$$A\left(\omega_0^2 + 2\delta i \omega - \omega^2 \right)= \frac{F}{m}  e^{-i\phi} = \frac{F}{m} \left(cos (\phi) - i sin (\phi)\right)$$
 
 gelten. Die Gleichung hat einen Realteil und einen Imaginärteil, welche separat voneinander verglichen werden können.
 
@@ -77,7 +77,7 @@ A\left(\omega_0^2 - \omega^2 \right) = \frac{F}{m} cos (\phi)$$
 
 **Imaginärteil**
 
-$$2 A \delta \omega = \frac{F}{m} sin (\phi)$$
+$$2 A \delta \omega = -\frac{F}{m} sin (\phi)$$
 
 Dies ergibt ein Gleichungssystem mit zwei Gleichungen und 2 Unbekannten, welches gelöst werden kann.
 Auflösen nach $A$ und $\phi$ ergibt
@@ -91,12 +91,17 @@ $$2 A \delta \omega = \frac{F}{m} sin (\phi)$$(gleichung-erz-2)
 
 Mit Gleichung {eq}`gleichung-erz-1` geteilt durch Gleichung {eq}`gleichung-erz-2`
 
-$$\frac{\frac{F}{m} sin (\phi)}{\frac{F}{m} cos (\phi)} = \frac{2 A \delta \omega}{A\left(\omega_0^2 - \omega^2 \right)} 
+$$\frac{\frac{F}{m} sin (\phi)}{\frac{F}{m} cos (\phi)} = \frac{- 2 A \delta \omega}{A\left(\omega_0^2 - \omega^2 \right)} 
 \Leftrightarrow 
-\frac{sin (\phi)}{cos (\phi)} = tan(\phi) = \frac{2 \delta \omega}{\left(\omega_0^2 - \omega^2 \right)} 
+\frac{sin (\phi)}{cos (\phi)} = tan(\phi) = \frac{-2 \delta \omega}{\left(\omega_0^2 - \omega^2 \right)} 
 $$
 
-$$\Leftrightarrow \phi = arctan \left(\frac{2 \delta \omega}{\omega_0^2 - \omega^2 } \right)$$
+$$\Leftrightarrow \phi = arctan \left(- \frac{2 \delta \omega}{\omega_0^2 - \omega^2 } \right) =  - arctan \left( \frac{2 \delta \omega}{\omega_0^2 - \omega^2 } \right)$$
+
+Damit ist 
+
+$$\\left| \phi \right|= arctan \left( \frac{2 \delta \omega}{\omega_0^2 - \omega^2 } \right)$$
+
 
 Mit Gleichung {eq}`gleichung-erz-1`$^2$ + Gleichung {eq}`gleichung-erz-2`$^2$ ergibt sich für die Amplitude der erzwungenen Schwingung:
 

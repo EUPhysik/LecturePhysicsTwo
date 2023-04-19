@@ -483,10 +483,10 @@ Nach der <a class="reference external" href="https://de.wikipedia.org/wiki/Euler
 = \frac{F}{m} e^{i\omega t}
 \Leftrightarrow
 \left(\omega_0^2 + 2\delta i \omega - \omega^2 \right)A e^{i\left( \omega t + \phi\right)}
-= \frac{F}{m} e^{i\left( \omega t + \phi\right)} e^{-\phi}\]</div>
+= \frac{F}{m} e^{i\left( \omega t + \phi\right)} e^{-i\phi}\]</div>
 <p>Da die Gleichung für alle <span class="math notranslate nohighlight">\(t\)</span> gilt, muss</p>
 <div class="math notranslate nohighlight">
-\[A\left(\omega_0^2 + 2\delta i \omega - \omega^2 \right)= \frac{F}{m}  e^{-\phi} = \frac{F}{m} \left(cos (\phi) + i sin (\phi)\right)\]</div>
+\[A\left(\omega_0^2 + 2\delta i \omega - \omega^2 \right)= \frac{F}{m}  e^{-i\phi} = \frac{F}{m} \left(cos (\phi) - i sin (\phi)\right)\]</div>
 <p>gelten. Die Gleichung hat einen Realteil und einen Imaginärteil, welche separat voneinander verglichen werden können.</p>
 <p><strong>Realteil</strong></p>
 <div class="math notranslate nohighlight">
@@ -494,7 +494,7 @@ Nach der <a class="reference external" href="https://de.wikipedia.org/wiki/Euler
 A\left(\omega_0^2 - \omega^2 \right) = \frac{F}{m} cos (\phi)\]</div>
 <p><strong>Imaginärteil</strong></p>
 <div class="math notranslate nohighlight">
-\[2 A \delta \omega = \frac{F}{m} sin (\phi)\]</div>
+\[2 A \delta \omega = -\frac{F}{m} sin (\phi)\]</div>
 <p>Dies ergibt ein Gleichungssystem mit zwei Gleichungen und 2 Unbekannten, welches gelöst werden kann.
 Auflösen nach <span class="math notranslate nohighlight">\(A\)</span> und <span class="math notranslate nohighlight">\(\phi\)</span> ergibt</p>
 <div class="math notranslate nohighlight" id="equation-gleichung-erz-1">
@@ -505,12 +505,15 @@ A\left(\omega_0^2 - \omega^2 \right) = \frac{F}{m} cos (\phi)\]</div>
 <span class="eqno">(5.3)<a class="headerlink" href="#equation-gleichung-erz-2" title="Permalink to this equation">#</a></span>\[2 A \delta \omega = \frac{F}{m} sin (\phi)\]</div>
 <p>Mit Gleichung <a class="reference internal" href="#equation-gleichung-erz-1">(5.2)</a> geteilt durch Gleichung <a class="reference internal" href="#equation-gleichung-erz-2">(5.3)</a></p>
 <div class="math notranslate nohighlight">
-\[\frac{\frac{F}{m} sin (\phi)}{\frac{F}{m} cos (\phi)} = \frac{2 A \delta \omega}{A\left(\omega_0^2 - \omega^2 \right)} 
+\[\frac{\frac{F}{m} sin (\phi)}{\frac{F}{m} cos (\phi)} = \frac{- 2 A \delta \omega}{A\left(\omega_0^2 - \omega^2 \right)} 
 \Leftrightarrow 
-\frac{sin (\phi)}{cos (\phi)} = tan(\phi) = \frac{2 \delta \omega}{\left(\omega_0^2 - \omega^2 \right)} 
+\frac{sin (\phi)}{cos (\phi)} = tan(\phi) = \frac{-2 \delta \omega}{\left(\omega_0^2 - \omega^2 \right)} 
 \]</div>
 <div class="math notranslate nohighlight">
-\[\Leftrightarrow \phi = arctan \left(\frac{2 \delta \omega}{\omega_0^2 - \omega^2 } \right)\]</div>
+\[\Leftrightarrow \phi = arctan \left(- \frac{2 \delta \omega}{\omega_0^2 - \omega^2 } \right) =  - arctan \left( \frac{2 \delta \omega}{\omega_0^2 - \omega^2 } \right)\]</div>
+<p>Damit ist</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\\left| \phi \right|= arctan \left( \frac{2 \delta \omega}{\omega_0^2 - \omega^2 } \right)\end{split}\]</div>
 <p>Mit Gleichung <a class="reference internal" href="#equation-gleichung-erz-1">(5.2)</a><span class="math notranslate nohighlight">\(^2\)</span> + Gleichung <a class="reference internal" href="#equation-gleichung-erz-2">(5.3)</a><span class="math notranslate nohighlight">\(^2\)</span> ergibt sich für die Amplitude der erzwungenen Schwingung:</p>
 <div class="math notranslate nohighlight">
 \[\left( A\left(\omega_0^2 - \omega^2 \right)  \right)^2 + \left( 2 A \delta \omega  \right)^2= \left(\frac{F}{m} cos (\phi) \right)^2 + \left( \frac{F}{m} sin (\phi) \right)^2\]</div>
