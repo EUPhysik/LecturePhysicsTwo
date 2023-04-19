@@ -453,7 +453,12 @@ Angenommen, diese äußere Schwingung hat die Frequenz <span class="math notrans
 <p>oder mit <span class="math notranslate nohighlight">\(2\delta = \frac{\beta}{m}\)</span></p>
 <div class="math notranslate nohighlight" id="equation-eq-dgl-erz">
 <span class="eqno">(5.1)<a class="headerlink" href="#equation-eq-dgl-erz" title="Permalink to this equation">#</a></span>\[\frac{d^2x}{dt^2} + 2\delta \frac{dx}{dt} + \omega_0^2x = \frac{F}{m} cos \left(\omega t \right)\]</div>
-<p>Die Lösung dieser Differentialgleichung ist einfacher im Komplexen. Dazu wird der Ansatz <span class="math notranslate nohighlight">\(z = x + iy\)</span> verwendet. Somit ist <span class="math notranslate nohighlight">\(x = Im \left( z \right)\)</span> (Schwingungsteil). Die DGL im Komplexen lautet also</p>
+<p>Die Lösung dieser Differentialgleichung ist einfacher im Komplexen.
+Nach der <a class="reference external" href="https://de.wikipedia.org/wiki/Eulersche_Formel">Eulerschen Formel</a> gilt</p>
+<div class="math notranslate nohighlight">
+\[e^{i\omega t} = cos(\omega t) + i sin(\omega t)\]</div>
+<p>Somit ist <span class="math notranslate nohighlight">\(cos(\omega t) = Re \left( i \omega t \right)\)</span>.</p>
+<p>Die Variable <span class="math notranslate nohighlight">\(x\)</span> wird nun durch die komplexe Variable <span class="math notranslate nohighlight">\(z = Re(z) + i Im(z)\)</span> ersetzt. Die DGL im Komplexen lautet also</p>
 <div class="math notranslate nohighlight">
 \[\frac{d^2z}{dt^2} + 2\delta \frac{dz}{dt} + \omega_0^2z = \frac{F}{m} e^{i\omega t}\]</div>
 <p>Als Lösungsansatz wird wieder eine e-Funktion verwendet. Damit ist</p>
