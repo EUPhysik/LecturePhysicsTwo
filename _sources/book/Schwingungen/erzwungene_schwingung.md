@@ -30,7 +30,7 @@ Nach der [Eulerschen Formel](https://de.wikipedia.org/wiki/Eulersche_Formel) gil
 $$e^{i\omega t} = cos(\omega t) + i sin(\omega t)$$
 
 
-Somit ist $cos(\omega t) = Re \left( i \omega t \right)$. 
+Somit ist $cos(\omega t) = Re \left( e^{i \omega t} \right)$. 
 
 Die Variable $x$ wird nun durch die komplexe Variable $z = Re(z) + i Im(z)$ ersetzt. Die DGL im Komplexen lautet also
 
