@@ -24,7 +24,15 @@ oder mit $2\delta = \frac{\beta}{m}$
 
 $$\frac{d^2x}{dt^2} + 2\delta \frac{dx}{dt} + \omega_0^2x = \frac{F}{m} cos \left(\omega t \right)$$(eq-dgl-erz)
 
-Die Lösung dieser Differentialgleichung ist einfacher im Komplexen. Dazu wird der Ansatz $z = x + iy$ verwendet. Somit ist $x = Im \left( z \right)$ (Schwingungsteil). Die DGL im Komplexen lautet also
+Die Lösung dieser Differentialgleichung ist einfacher im Komplexen. 
+Nach der [Eulerschen Formel](https://de.wikipedia.org/wiki/Eulersche_Formel) gilt 
+
+$$e^{i\omega t} = cos(\omega t) + i sin(\omega t)$$
+
+
+Somit ist $cos(\omega t) = Re \left( i \omega t \right)$. 
+
+Die Variable $x$ wird nun durch die komplexe Variable $z = Re(z) + i Im(z)$ ersetzt. Die DGL im Komplexen lautet also
 
 $$\frac{d^2z}{dt^2} + 2\delta \frac{dz}{dt} + \omega_0^2z = \frac{F}{m} e^{i\omega t}$$
 
