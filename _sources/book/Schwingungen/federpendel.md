@@ -133,7 +133,7 @@ Da Sinus und Cosinus sich nur durch eine Phasenverschiebung von $180^\circ$ unte
 
  $$x(t) = \hat{x} \cdot sin \left( \omega_0 t + \tilde{\phi} \right)$$
 
-geschrieben werden mit $\phi = \tilde{\phi} + 180^\circ$.
+geschrieben werden mit $\phi = \tilde{\phi} + 90^\circ$.
 
 Das Video {numref}`Abbildung %s <osz-1>` zeigt die Bewegung eines Federpendel (oder auch harmonischen Oszillators) mit einer Amplitude von $\hat{x}=1$ und einer Frequenz von $\omega = 1$ (Klick auf das Bild startet das Video).
 
