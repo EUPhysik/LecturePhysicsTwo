@@ -139,8 +139,8 @@ $$ \frac{\partial^2 y \left(t,x \right) }{\partial t^2} = -\omega^2 y \left(t,x 
 
 $$ \frac{\partial^2 y \left(t,x \right) }{\partial x^2} = -k^2 y \left(t,x \right)$$
 
-$$\frac{\partial^2y}{\partial x^2} = \frac{1}{v^2}\frac{\partial^2y}{\partial t^2} \Rightarrow - \omega^2 y\left(t,x\right) = \frac{-k^2}{v^2}y\left(t,x\right)
-\Leftrightarrow \omega^2 = \frac{k^2}{v^2}\Leftrightarrow k = \omega \cdot v$$
+$$\frac{\partial^2y}{\partial x^2} = \frac{1}{v^2}\frac{\partial^2y}{\partial t^2} \Rightarrow - k^2 y\left(t,x\right) = \frac{-\omega^2}{v^2}y\left(t,x\right)
+\Leftrightarrow k^2 = \frac{\omega^2}{v^2} \Leftrightarrow k = \frac{\omega}{v}$$
 
 Auch hier kann die allgemeine Lösung generiert werden, in dem eine beliebige Phase zum Argument des Cosinus addiert wird. Diese ist dann durch die Anfangsbedingungen zu bestimmen.
 
