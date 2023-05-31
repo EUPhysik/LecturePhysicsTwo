@@ -67,7 +67,7 @@ $\gamma \approx \frac{h}{g}$
 
 Daraus ergibt sich
 
-$$\Rightarrow \frac{h}{r} \left(n_2 - n_1 \right) = n_1 \frac{h}{g} + n_2 \frac{h}{g} \Leftrightarrow \frac{n_2 - n_1}{r}= \frac{n_1}{g} + \frac{n_2}{b}$$(eq:b-o)
+$$\Rightarrow \frac{h}{r} \left(n_2 - n_1 \right) = n_1 \frac{h}{g} + n_2 \frac{h}{ b} \Leftrightarrow \frac{n_2 - n_1}{r}= \frac{n_1}{g} + \frac{n_2}{b}$$(eq:b-o)
 
 
 ## Dünne Linsen
