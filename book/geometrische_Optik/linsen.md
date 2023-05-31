@@ -39,7 +39,7 @@ Die Vorzeichenkonvention für die Brechung ähnelt derjenigen für die Reflexion
 
 Die Herleitung der entsprechenden Abbildungsgleichung erfolgt über verschiedene Winkelbetrachtungen.
 
-```{figure} Bilder_geooptik/Kugeloberfläche_Brechung.svg
+```{figure} Bilder_geooptik/Brechung_sphaerische_Oberflaeche.svg
 ---
 width: 100%
 alt: Abbildungsgleichung an gekrümmten durchsichtigen Oberflächen
