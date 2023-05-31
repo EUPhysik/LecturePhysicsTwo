@@ -39,7 +39,7 @@ Die Vorzeichenkonvention für die Brechung ähnelt derjenigen für die Reflexion
 
 Die Herleitung der entsprechenden Abbildungsgleichung erfolgt über verschiedene Winkelbetrachtungen.
 
-```{figure} Bilder_geooptik/Kugeloberfläche_Brechung.svg
+```{figure} Bilder_geooptik/Brechung_sphaerische_Oberflaeche.svg
 ---
 width: 100%
 alt: Abbildungsgleichung an gekrümmten durchsichtigen Oberflächen
@@ -67,7 +67,7 @@ $\gamma \approx \frac{h}{g}$
 
 Daraus ergibt sich
 
-$$\Rightarrow \frac{h}{r} \left(n_2 - n_1 \right) = n_1 \frac{h}{g} + n_2 \frac{h}{g} \Leftrightarrow \frac{n_2 - n_1}{r}= \frac{n_1}{g} + \frac{n_2}{b}$$(eq:b-o)
+$$\Rightarrow \frac{h}{r} \left(n_2 - n_1 \right) = n_1 \frac{h}{g} + n_2 \frac{h}{b} \Leftrightarrow \frac{n_2 - n_1}{r}= \frac{n_1}{g} + \frac{n_2}{b}$$(eq:b-o)
 
 
 ## Dünne Linsen
