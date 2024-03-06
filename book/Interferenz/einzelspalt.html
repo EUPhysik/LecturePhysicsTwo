@@ -1,13 +1,12 @@
 
-
 <!DOCTYPE html>
 
 
-<html lang="en" >
+<html lang="en" data-content_root="../../" >
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <title>2. Interferenz an einem Spalt &#8212; Skript Physik 2</title>
   
@@ -19,53 +18,50 @@
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../../_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
-<link href="../../_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
-<link href="../../_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link href="../../_static/styles/theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+<link href="../../_static/styles/bootstrap.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
 
   
-  <link href="../../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
-  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+  <link href="../../_static/vendor/fontawesome/6.5.1/css/all.min.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.1/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.1/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.1/webfonts/fa-regular-400.woff2" />
 
-    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
-    <link rel="stylesheet" href="../../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
-    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
-    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../../_static/styles/sphinx-book-theme.css?v=384b581d" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
     <link rel="stylesheet" type="text/css" href="../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
-    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
-    <link rel="stylesheet" type="text/css" href="../../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css?v=0a3b3ea7" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
-<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae" />
+  <script src="../../_static/vendor/fontawesome/6.5.1/js/all.min.js?digest=8d27b9dea8ad943066ae"></script>
 
-    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
-    <script src="../../_static/jquery.js"></script>
-    <script src="../../_static/underscore.js"></script>
-    <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
-    <script src="../../_static/doctools.js"></script>
-    <script src="../../_static/clipboard.min.js"></script>
-    <script src="../../_static/copybutton.js"></script>
-    <script src="../../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script src="../../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../../_static/doctools.js?v=888ff710"></script>
+    <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../../_static/copybutton.js?v=f281be69"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js?v=efea14e4"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
-    <script src="../../_static/togglebutton.js"></script>
+    <script src="../../_static/togglebutton.js?v=4a39c7ea"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
-    <script src="../../_static/design-tabs.js"></script>
-    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
-const thebe_selector = ".thebe,.cell"
-const thebe_selector_input = "pre"
-const thebe_selector_output = ".output, .cell_output"
-</script>
-    <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <script src="../../_static/design-tabs.js?v=36754332"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'book/Interferenz/einzelspalt';</script>
     <link rel="canonical" href="https://euphysik.github.io/LecturePhysicsTwo/book/Interferenz/einzelspalt.html" />
-    <link rel="shortcut icon" href="../../_static/physics_icon_small.png"/>
+    <link rel="icon" href="../../_static/physics_icon_small.png"/>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="3. Interferenz am Gitter" href="gitter.html" />
@@ -79,7 +75,15 @@ const thebe_selector_output = ".output, .cell_output"
 
   
   
-  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <a id="pst-skip-link" class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
   
   <input type="checkbox"
           class="sidebar-toggle"
@@ -114,11 +118,14 @@ const thebe_selector_output = ".output, .cell_output"
 </form></div>
   </div>
   
-    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
-    </nav>
+    <header class="bd-header navbar navbar-expand-lg bd-navbar">
+    </header>
   
+
   <div class="bd-container">
     <div class="bd-container__inner bd-page-width">
+      
+      
       
       <div class="bd-sidebar-primary bd-sidebar">
         
@@ -133,9 +140,11 @@ const thebe_selector_output = ".output, .cell_output"
   
     <div class="sidebar-primary-items__start sidebar-primary__section">
         <div class="sidebar-primary-item">
+
   
 
 <a class="navbar-brand logo" href="../../intro.html">
+  
   
   
   
@@ -145,12 +154,23 @@ const thebe_selector_output = ".output, .cell_output"
       
     
     
-    <img src="../../_static/FB3_ET-Logo.png" class="logo__image only-light" alt="Logo image"/>
-    <script>document.write(`<img src="../../_static/FB3_ET-Logo.png" class="logo__image only-dark" alt="Logo image"/>`);</script>
+    <img src="../../_static/FB3_ET-Logo.png" class="logo__image only-light" alt="Skript Physik 2 - Home"/>
+    <script>document.write(`<img src="../../_static/FB3_ET-Logo.png" class="logo__image only-dark" alt="Skript Physik 2 - Home"/>`);</script>
   
   
 </a></div>
-        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn navbar-btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
         <p aria-level="2" class="caption" role="heading"><span class="caption-text">Schwingungen</span></p>
 <ul class="nav bd-sidenav">
@@ -380,20 +400,22 @@ const thebe_selector_output = ".output, .cell_output"
 </button>
 
 
+
 <script>
 document.write(`
-  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
-    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
-    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
   </button>
 `);
 </script>
 
+
 <script>
 document.write(`
   <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <i class="fa-solid fa-magnifying-glass"></i>
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
   </button>
 `);
 </script>
@@ -420,14 +442,14 @@ document.write(`
               
                 
 <div id="searchbox"></div>
-                <article class="bd-article" role="main">
+                <article class="bd-article">
                   
   <section class="tex2jax_ignore mathjax_ignore" id="interferenz-an-einem-spalt">
-<h1><span class="section-number">2. </span>Interferenz an einem Spalt<a class="headerlink" href="#interferenz-an-einem-spalt" title="Permalink to this heading">#</a></h1>
+<h1><span class="section-number">2. </span>Interferenz an einem Spalt<a class="headerlink" href="#interferenz-an-einem-spalt" title="Link to this heading">#</a></h1>
 <figure class="align-default" id="interferenz-2">
 <a class="reference internal image-reference" href="https://upload.wikimedia.org/wikipedia/commons/1/17/Beugung_am_Einfachspalt_-_gruen.jpg"><img alt="Interferenz" src="https://upload.wikimedia.org/wikipedia/commons/1/17/Beugung_am_Einfachspalt_-_gruen.jpg" style="width: 60%;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 2.13 </span><span class="caption-text">Interferenzbild am Einzelspalt (Quelle: Oliver Kurmis, CC BY-SA 2.0 de, <a class="reference external" href="https://commons.wikimedia.org/w/index.php?curid=89488364">https://commons.wikimedia.org/w/index.php?curid=89488364</a>)</span><a class="headerlink" href="#interferenz-2" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 2.13 </span><span class="caption-text">Interferenzbild am Einzelspalt (Quelle: Oliver Kurmis, CC BY-SA 2.0 de, <a class="reference external" href="https://commons.wikimedia.org/w/index.php?curid=89488364">https://commons.wikimedia.org/w/index.php?curid=89488364</a>)</span><a class="headerlink" href="#interferenz-2" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>Beugungseffekte kann man insbesondere sichtbar machen, wenn man Licht verwendet, welches aus nur einer Wellenlänge besteht und gleichphasig ist. Man spricht dann von monochromatischem (Licht mit einer Wellenlänge ) und kohärentem (Licht mit gleicher Phase) Licht.
@@ -437,13 +459,13 @@ Trifft monochromatisches und kohärentes Licht  auf einem schmalen (nicht punktf
 <figure class="align-default" id="interferenz-3">
 <a class="reference internal image-reference" href="../../_images/Einzelspalt_3.png"><img alt="Interferenz" src="../../_images/Einzelspalt_3.png" style="width: 80%;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 2.14 </span><span class="caption-text">Schematische Darstellung der Wellenausbreitung an einem schmalen (nicht punktförmigen) Spalt. Die zusätzliche zurückgelegte Wegstrecke der unteren Wellen ist abhängig vom Winkel <span class="math notranslate nohighlight">\(\theta\)</span> unter dem auf dem Schirm beobachtet wird.</span><a class="headerlink" href="#interferenz-3" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 2.14 </span><span class="caption-text">Schematische Darstellung der Wellenausbreitung an einem schmalen (nicht punktförmigen) Spalt. Die zusätzliche zurückgelegte Wegstrecke der unteren Wellen ist abhängig vom Winkel <span class="math notranslate nohighlight">\(\theta\)</span> unter dem auf dem Schirm beobachtet wird.</span><a class="headerlink" href="#interferenz-3" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <figure class="align-default" id="interferenz-4">
 <a class="reference internal image-reference" href="../../_images/Einzelspalt_4.png"><img alt="Interferenz" src="../../_images/Einzelspalt_4.png" style="width: 80%;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 2.15 </span><span class="caption-text">Schematische Darstellung der Zerlegung des Lichtstrahls, welcher durch den Spalt fällt in N Teilstrahlen. Jeder Teilstrahl <span class="math notranslate nohighlight">\(l\)</span> legt im Vergleich zum obersten Strahl die zusätzliche Wegstrecke <span class="math notranslate nohighlight">\(\delta_l\)</span> zurück.</span><a class="headerlink" href="#interferenz-4" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 2.15 </span><span class="caption-text">Schematische Darstellung der Zerlegung des Lichtstrahls, welcher durch den Spalt fällt in N Teilstrahlen. Jeder Teilstrahl <span class="math notranslate nohighlight">\(l\)</span> legt im Vergleich zum obersten Strahl die zusätzliche Wegstrecke <span class="math notranslate nohighlight">\(\delta_l\)</span> zurück.</span><a class="headerlink" href="#interferenz-4" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p><a class="reference internal" href="#interferenz-3"><span class="std std-numref">Abbildung 2.14</span></a> zeigt die schematische Darstellung der Wellenausbreitung an einem schmalen Spalt mit endlicher Breite <span class="math notranslate nohighlight">\(b\)</span>. Der Lichtstrahl wird im Modell in mehrere Teilstrahlen aufgeteilt. Diese Teilstrahlen legen in Abhängigkeit vom Beobachtungswinkel <span class="math notranslate nohighlight">\(\theta\)</span> eine zusätzliche Wegstrecke zurück. Auf einem (im Vergleich zur Spaltbreite) weit entfernten Schirm überlagern sich die Wellen.</p>
@@ -572,7 +594,7 @@ I = I_0 \frac{sin^2 \left(
 <figure class="align-default" id="interferenz-5">
 <a class="reference internal image-reference" href="../../_images/Einzelspalt_int.png"><img alt="Interferenz" src="../../_images/Einzelspalt_int.png" style="width: 80%;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 2.16 </span><span class="caption-text">Intensitätsverteilung Interferenz am Einzelspalt</span><a class="headerlink" href="#interferenz-5" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 2.16 </span><span class="caption-text">Intensitätsverteilung Interferenz am Einzelspalt</span><a class="headerlink" href="#interferenz-5" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>Die Intensitätsverteilung des daraus resultierenden Interferenzmusters ist in <a class="reference internal" href="#interferenz-5"><span class="std std-numref">Abbildung 2.16</span></a> zu sehen.
@@ -623,11 +645,10 @@ Damit liegen die Minima bei</p>
 
               
               
-                <footer class="bd-footer-article">
+              
+              
+                <footer class="prev-next-footer">
                   
-<div class="footer-article-items footer-article__inner">
-  
-    <div class="footer-article-item"><!-- Previous / next buttons -->
 <div class="prev-next-area">
     <a class="left-prev"
        href="beugung.html"
@@ -647,15 +668,14 @@ Damit liegen die Minima bei</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
-</div></div>
-  
 </div>
-
                 </footer>
               
             </div>
             
             
+              
+                <div class="bd-sidebar-secondary bd-toc"></div>
               
             
           </div>
@@ -673,6 +693,7 @@ By Simone Arnold
   
   <div class="footer-item">
     
+
   </div>
   
   <div class="footer-item">
@@ -700,8 +721,8 @@ By Simone Arnold
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../../_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
-<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+  <script src="../../_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae"></script>
+<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae"></script>
 
   <footer class="bd-footer">
   </footer>

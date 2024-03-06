@@ -1,13 +1,12 @@
 
-
 <!DOCTYPE html>
 
 
-<html lang="en" >
+<html lang="en" data-content_root="../../" >
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <title>7. Wellenausbreitung an Hindernissen &#8212; Skript Physik 2</title>
   
@@ -19,53 +18,50 @@
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../../_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
-<link href="../../_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
-<link href="../../_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link href="../../_static/styles/theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+<link href="../../_static/styles/bootstrap.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
 
   
-  <link href="../../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
-  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+  <link href="../../_static/vendor/fontawesome/6.5.1/css/all.min.css?digest=8d27b9dea8ad943066ae" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.1/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.1/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.1/webfonts/fa-regular-400.woff2" />
 
-    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
-    <link rel="stylesheet" href="../../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
-    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
-    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../../_static/styles/sphinx-book-theme.css?v=384b581d" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
     <link rel="stylesheet" type="text/css" href="../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
-    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
-    <link rel="stylesheet" type="text/css" href="../../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="../../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css?v=0a3b3ea7" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
-<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae" />
+  <script src="../../_static/vendor/fontawesome/6.5.1/js/all.min.js?digest=8d27b9dea8ad943066ae"></script>
 
-    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
-    <script src="../../_static/jquery.js"></script>
-    <script src="../../_static/underscore.js"></script>
-    <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
-    <script src="../../_static/doctools.js"></script>
-    <script src="../../_static/clipboard.min.js"></script>
-    <script src="../../_static/copybutton.js"></script>
-    <script src="../../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script src="../../_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="../../_static/doctools.js?v=888ff710"></script>
+    <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../../_static/copybutton.js?v=f281be69"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js?v=efea14e4"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
-    <script src="../../_static/togglebutton.js"></script>
+    <script src="../../_static/togglebutton.js?v=4a39c7ea"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
-    <script src="../../_static/design-tabs.js"></script>
-    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
-const thebe_selector = ".thebe,.cell"
-const thebe_selector_input = "pre"
-const thebe_selector_output = ".output, .cell_output"
-</script>
-    <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <script src="../../_static/design-tabs.js?v=36754332"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../../_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'book/Wellen/wellenausbreitung2';</script>
     <link rel="canonical" href="https://euphysik.github.io/LecturePhysicsTwo/book/Wellen/wellenausbreitung2.html" />
-    <link rel="shortcut icon" href="../../_static/physics_icon_small.png"/>
+    <link rel="icon" href="../../_static/physics_icon_small.png"/>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="8. Überlagerung von Wellen" href="ueberlagerung.html" />
@@ -79,7 +75,15 @@ const thebe_selector_output = ".output, .cell_output"
 
   
   
-  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <a id="pst-skip-link" class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
   
   <input type="checkbox"
           class="sidebar-toggle"
@@ -114,11 +118,14 @@ const thebe_selector_output = ".output, .cell_output"
 </form></div>
   </div>
   
-    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
-    </nav>
+    <header class="bd-header navbar navbar-expand-lg bd-navbar">
+    </header>
   
+
   <div class="bd-container">
     <div class="bd-container__inner bd-page-width">
+      
+      
       
       <div class="bd-sidebar-primary bd-sidebar">
         
@@ -133,9 +140,11 @@ const thebe_selector_output = ".output, .cell_output"
   
     <div class="sidebar-primary-items__start sidebar-primary__section">
         <div class="sidebar-primary-item">
+
   
 
 <a class="navbar-brand logo" href="../../intro.html">
+  
   
   
   
@@ -145,12 +154,23 @@ const thebe_selector_output = ".output, .cell_output"
       
     
     
-    <img src="../../_static/FB3_ET-Logo.png" class="logo__image only-light" alt="Logo image"/>
-    <script>document.write(`<img src="../../_static/FB3_ET-Logo.png" class="logo__image only-dark" alt="Logo image"/>`);</script>
+    <img src="../../_static/FB3_ET-Logo.png" class="logo__image only-light" alt="Skript Physik 2 - Home"/>
+    <script>document.write(`<img src="../../_static/FB3_ET-Logo.png" class="logo__image only-dark" alt="Skript Physik 2 - Home"/>`);</script>
   
   
 </a></div>
-        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn navbar-btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
         <p aria-level="2" class="caption" role="heading"><span class="caption-text">Schwingungen</span></p>
 <ul class="nav bd-sidenav">
@@ -380,20 +400,22 @@ const thebe_selector_output = ".output, .cell_output"
 </button>
 
 
+
 <script>
 document.write(`
-  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
-    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
-    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
   </button>
 `);
 </script>
 
+
 <script>
 document.write(`
   <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <i class="fa-solid fa-magnifying-glass"></i>
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
   </button>
 `);
 </script>
@@ -434,31 +456,31 @@ document.write(`
               
                 
 <div id="searchbox"></div>
-                <article class="bd-article" role="main">
+                <article class="bd-article">
                   
   <section class="tex2jax_ignore mathjax_ignore" id="wellenausbreitung-an-hindernissen">
-<h1><span class="section-number">7. </span>Wellenausbreitung an Hindernissen<a class="headerlink" href="#wellenausbreitung-an-hindernissen" title="Permalink to this heading">#</a></h1>
+<h1><span class="section-number">7. </span>Wellenausbreitung an Hindernissen<a class="headerlink" href="#wellenausbreitung-an-hindernissen" title="Link to this heading">#</a></h1>
 <p>Wenn Wellen auf Hindernisse treffen, wechselwirken die Hindernisse mit den Wellen und verändern diese. Eine Berechnung dieser Effekte kann über die Wellengleichung erfolgen.
 Eine leichter verständliche Alternative, welche auch hier im Rahmen der Vorlesung betrachtet wird, sind konstruktive Methoden, welche durch   Huygens und Fermat entwickelt wurden. Diese werden im Folgenden vorgestellt und darauf aufbauend die Effekte Beugung, Brechung und Reflexion betrachtet.</p>
 <section id="huygen-sches-prinzip">
-<h2><span class="section-number">7.1. </span>Huygen’sches Prinzip<a class="headerlink" href="#huygen-sches-prinzip" title="Permalink to this heading">#</a></h2>
+<h2><span class="section-number">7.1. </span>Huygen’sches Prinzip<a class="headerlink" href="#huygen-sches-prinzip" title="Link to this heading">#</a></h2>
 <p>Das Huygen’sches Prinzip ist ein geometrisches Prinzip.
 Jeder Punkt einer bestehenden Wellenfront ist Ausgangspunkt einer neuen kugelförmigen Elementarwelle, die sich mit derselben Geschwindigkeit und Frequenz ausbreitet wie die ursprüngliche Wellenfront im betreffenden Medium. Die Einhüllende aller Elementarwellen ergibt die Wellenfront zu einem späteren Zeitpunkt (siehe <a class="reference internal" href="#einhuellende-3"><span class="std std-numref">Abbildung 7.4</span></a>).</p>
 <figure class="align-default" id="einhuellende-3">
 <a class="reference internal image-reference" href="../../_images/einhuellende.svg"><img alt="Welle" src="../../_images/einhuellende.svg" width="45%" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 7.4 </span><span class="caption-text">Einhüllende einer Punktwelle.</span><a class="headerlink" href="#einhuellende-3" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 7.4 </span><span class="caption-text">Einhüllende einer Punktwelle.</span><a class="headerlink" href="#einhuellende-3" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 </section>
 <section id="fermatsches-prinzip">
-<h2><span class="section-number">7.2. </span>Fermat’sches Prinzip<a class="headerlink" href="#fermatsches-prinzip" title="Permalink to this heading">#</a></h2>
+<h2><span class="section-number">7.2. </span>Fermat’sches Prinzip<a class="headerlink" href="#fermatsches-prinzip" title="Link to this heading">#</a></h2>
 <p>Das Fermat’sche Prinzip besagt, dass der Weg, den eine Welle von einem Punkt zu einem anderen einschlägt, stets derjenige ist, bei dem die dafür benötigte Zeitspanne minimal ist.</p>
 <p>Anschaulich kann dieses Prinzip hergeleitet werden mit Hilfe des Rettungsschwimmerprinzips. Dies ist in <a class="reference internal" href="#fermat-1"><span class="std std-numref">Abbildung 7.5</span></a> zu sehen. Der Rettungsschwimmer möchte einen Ertrinkenden retten und dazu diesen möglichst schnell erreichen. An Land kann er deutlich schneller rennen, als er im Wasser schwimmen kann. Also überlegt er, wie er denjenigen Weg, der die gesamte benötige Zeit minimiert.</p>
 <figure class="align-default" id="fermat-1">
 <a class="reference internal image-reference" href="../../_images/fermat.svg"><img alt="Welle" src="../../_images/fermat.svg" width="80%" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 7.5 </span><span class="caption-text">Einhüllende einer Punktwelle.</span><a class="headerlink" href="#fermat-1" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 7.5 </span><span class="caption-text">Einhüllende einer Punktwelle.</span><a class="headerlink" href="#fermat-1" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>Die gesamte zurückgelegte Strecke ist</p>
@@ -496,33 +518,33 @@ Jeder Punkt einer bestehenden Wellenfront ist Ausgangspunkt einer neuen kugelfö
 \Leftrightarrow \frac{sin \left( \alpha \right)}{v_L} = \frac{sin \left( \beta \right)}{v_W}\]</div>
 </section>
 <section id="beugung">
-<h2><span class="section-number">7.3. </span>Beugung<a class="headerlink" href="#beugung" title="Permalink to this heading">#</a></h2>
+<h2><span class="section-number">7.3. </span>Beugung<a class="headerlink" href="#beugung" title="Link to this heading">#</a></h2>
 <p>Die Beugung oder Diffraktion ist die Ablenkung von Wellen an einem Hindernis. Durch Beugung kann sich eine Welle in Raumbereiche ausbreiten, die auf geradem Weg durch das Hindernis versperrt wären. Jede Art von physikalischen Wellen kann Beugung zeigen.</p>
 <p>Beugung kann unter anderem gut beobachtet werden, wenn geometrische Strukturen eine Rolle spielen, deren Größe mit der Wellenlänge der verwendeten Wellen vergleichbar ist. Abbildung <a class="reference internal" href="#beug-1"><span class="std std-numref">Abbildung 7.6</span></a> die Beugung einer Welle an einer kleinen Öffnung.</p>
 <figure class="align-default" id="beug-1">
 <a class="reference internal image-reference" href="../../_images/beugung.gif"><img alt="Beugung" src="../../_images/beugung.gif" style="width: 60%;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 7.6 </span><span class="caption-text">Beugung einer Welle an einer punktförmigen Öffnung, <a class="reference external" href="https://physics.stackexchange.com">https://physics.stackexchange.com</a></span><a class="headerlink" href="#beug-1" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 7.6 </span><span class="caption-text">Beugung einer Welle an einer punktförmigen Öffnung, <a class="reference external" href="https://physics.stackexchange.com">https://physics.stackexchange.com</a></span><a class="headerlink" href="#beug-1" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>Beugung kann mit Hilfe des Huygen’schen Prinzips erklärt werden. An der punktförmigen Öffnung trifft die Welle von links auf das Hindernis und kann sich nicht weiter nach rechts ausbreiten. Da nach dem Huygen’schen Prinzip jeder Punkt einer bestehenden Wellenfront wieder Ausgangspunkt einer neuen kugelförmigen Elementarwelle ist, breitet sich von der punktförmigen Öffnung eine neue Welle aus.</p>
 </section>
 <section id="reflexion-und-transmission">
-<h2><span class="section-number">7.4. </span>Reflexion und Transmission<a class="headerlink" href="#reflexion-und-transmission" title="Permalink to this heading">#</a></h2>
+<h2><span class="section-number">7.4. </span>Reflexion und Transmission<a class="headerlink" href="#reflexion-und-transmission" title="Link to this heading">#</a></h2>
 <p>Trifft eine Welle auf ein Hindernis, welches lichtdurchlässig ist, kann ein Teil der Welle reflektiert oder durchgelassen (transmittiert) werden. Auch diese beiden Phänomene können mit Hilfe des Huygen’schen Prinzips erklärt werden.</p>
 <p><a class="reference internal" href="#ref-1"><span class="std std-numref">Abbildung 7.7</span></a> zeigt die Reflexion eines Welle an einer ebenen Fläche. Da die Wellen unter einem Winkel auf die Oberfläche auftreffen und die Ausbreitungsgeschwindigkeit der Welle endlich ist, treffen die Wellenberge im Bild links einen kurzen Zeitpunkt <span class="math notranslate nohighlight">\(\Delta t = \frac{\lambda}{c}\)</span> eher auf die Oberfläche auf. Dies führt dazu, dass sie diesen Zeitpunkt früher reflektiert werden.
 Der Eintrittswinkel und der Relexionswinkel (jeweils gemessen zur senkrechten) sind gleich.</p>
 <figure class="align-default" id="ref-1">
 <a class="reference internal image-reference" href="../../_images/Reflexion1.svg"><img alt="Reflexion" src="../../_images/Reflexion1.svg" width="90%" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 7.7 </span><span class="caption-text">Reflexion einer Welle nach dem Huygen’schen Prinzip</span><a class="headerlink" href="#ref-1" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 7.7 </span><span class="caption-text">Reflexion einer Welle nach dem Huygen’schen Prinzip</span><a class="headerlink" href="#ref-1" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>Auch bei der Transmission treffen die Wellenberge im Bild links einen kurzen Zeitpunkt <span class="math notranslate nohighlight">\(\Delta t = \frac{\lambda}{c}\)</span> eher auf die Oberfläche auf. Da sich bei Transmission das Medium durch dass die Wellen laufen ändert, ändert sich mit Durchtritt durch die Grenzfläche auch die Ausbreitungsgeschwindigkeit. Daher ändert sich auch die Ausbreitungsrichtung der Welle im Medium (siehe <a class="reference internal" href="#trans-1"><span class="std std-numref">Abbildung 7.8</span></a>).</p>
 <figure class="align-default" id="trans-1">
 <a class="reference internal image-reference" href="../../_images/Transmission.svg"><img alt="Reflexion" src="../../_images/Transmission.svg" width="90%" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 7.8 </span><span class="caption-text">Transmission einer Welle nach dem Huygen’schen Prinzip</span><a class="headerlink" href="#trans-1" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 7.8 </span><span class="caption-text">Transmission einer Welle nach dem Huygen’schen Prinzip</span><a class="headerlink" href="#trans-1" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>Bei der Reflexion einer Welle kann zusätzlich ein Phasensprung von <span class="math notranslate nohighlight">\(\frac{\pi}{2}\)</span> auftreten und zwar immer dann, wenn die Ausbreitungsgeschwindigkeit der Welle im Medium an dem die Reflexion stattfindet, geringer ist. Dies ist in <a class="reference internal" href="#ref-trans-1"><span class="std std-numref">Abbildung 7.9</span></a> dargestellt.
@@ -531,16 +553,16 @@ Der reflektierte Wellenberg ist im Unterschied zum transmittierten invertiert, e
 <figure class="align-default" id="ref-trans-1">
 <a class="reference internal image-reference" href="https://upload.wikimedia.org/wikipedia/commons/3/30/Partial_transmittance.gif"><img alt="Reflexion" src="https://upload.wikimedia.org/wikipedia/commons/3/30/Partial_transmittance.gif" style="width: 70%;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 7.9 </span><span class="caption-text">Reflexion und Transmission einer Welle, Von Oleg Alexandrov, Gemeinfrei, <a class="reference external" href="https://commons.wikimedia.org/w/index.php?curid=3148138">https://commons.wikimedia.org/w/index.php?curid=3148138</a></span><a class="headerlink" href="#ref-trans-1" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 7.9 </span><span class="caption-text">Reflexion und Transmission einer Welle, Von Oleg Alexandrov, Gemeinfrei, <a class="reference external" href="https://commons.wikimedia.org/w/index.php?curid=3148138">https://commons.wikimedia.org/w/index.php?curid=3148138</a></span><a class="headerlink" href="#ref-trans-1" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>Bei Transmission tritt kein Phasensprung auf, dies wird auch als Brechung bezeichnet.</p>
 </section>
 <section id="brechung">
-<h2><span class="section-number">7.5. </span>Brechung<a class="headerlink" href="#brechung" title="Permalink to this heading">#</a></h2>
+<h2><span class="section-number">7.5. </span>Brechung<a class="headerlink" href="#brechung" title="Link to this heading">#</a></h2>
 <p>Bei der Brechung ändert sich die Ausbreitungsrichtung einer Welle durch die Änderung der Ausbreitungsgeschwindigkeit in dem Medium das die Welle durchläuft.
 Die Änderung der Ausbreitungsrichtung kann mit Hilfe des Fermat’sches Prinzip berechnet werden.
-Wie <span class="xref myst">weiter oben</span> gezeigt gilt</p>
+Wie <a class="reference internal" href="#fermatsches-prinzip"><span class="xref myst">weiter oben</span></a> gezeigt gilt</p>
 <div class="math notranslate nohighlight">
 \[\frac{sin \left( \alpha \right)}{v_L} = \frac{sin \left( \beta \right)}{v_W}\]</div>
 <p><span class="math notranslate nohighlight">\(\alpha\)</span> ist der Einfallswinkel und <span class="math notranslate nohighlight">\(\beta\)</span> ist der Reflexionswinkel. <span class="math notranslate nohighlight">\(v_L\)</span> und <span class="math notranslate nohighlight">\(v_W\)</span> sind die Ausbreitungsgeschwindigkeiten in den verschiedenen Medien. Damit ist der Reflexionswinkel</p>
@@ -577,11 +599,10 @@ Wie <span class="xref myst">weiter oben</span> gezeigt gilt</p>
 
               
               
-                <footer class="bd-footer-article">
+              
+              
+                <footer class="prev-next-footer">
                   
-<div class="footer-article-items footer-article__inner">
-  
-    <div class="footer-article-item"><!-- Previous / next buttons -->
 <div class="prev-next-area">
     <a class="left-prev"
        href="welleneffekte.html"
@@ -601,10 +622,7 @@ Wie <span class="xref myst">weiter oben</span> gezeigt gilt</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
-</div></div>
-  
 </div>
-
                 </footer>
               
             </div>
@@ -612,6 +630,7 @@ Wie <span class="xref myst">weiter oben</span> gezeigt gilt</p>
             
               
                 <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
 
   <div class="sidebar-secondary-item">
   <div class="page-toc tocsection onthispage">
@@ -645,6 +664,7 @@ By Simone Arnold
   
   <div class="footer-item">
     
+
   </div>
   
   <div class="footer-item">
@@ -672,8 +692,8 @@ By Simone Arnold
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../../_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
-<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+  <script src="../../_static/scripts/bootstrap.js?digest=8d27b9dea8ad943066ae"></script>
+<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=8d27b9dea8ad943066ae"></script>
 
   <footer class="bd-footer">
   </footer>

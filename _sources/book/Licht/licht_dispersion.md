@@ -102,15 +102,28 @@ $$\Leftrightarrow 1 - \left( \frac{n_L}{n_W}\right)^2 sin (\alpha)^2 = 4 \cdot \
 
 $$\Leftrightarrow 1  = 4 \cdot \left( \frac{n_L}{n_W} \right)^2 cos^2 (\alpha) + \left( \frac{n_L}{n_W}\right)^2 sin (\alpha)^2$$
 
-$$\Leftrightarrow 1  = 3 \cdot \left( \frac{n_L}{n_W} \right)^2 cos^2 (\alpha)$$
+$$\Leftrightarrow sin (\alpha)^2 + cos (\alpha)^2  = 4 \cdot \left( \frac{n_L}{n_W} \right)^2 cos^2 (\alpha) + \left( \frac{n_L}{n_W}\right)^2 sin (\alpha)^2$$
 
-$$\Leftrightarrow \alpha = arccos \left( \sqrt{ \frac{1}{3} \left( \left( \frac{n_L}{n_W} \right)^2 - 1 \right)} \right) $$
+$$\Leftrightarrow sin (\alpha)^2 - \left( \frac{n_L}{n_W}\right)^2 sin (\alpha)^2  = 4 \cdot \left( \frac{n_L}{n_W} \right)^2 cos^2 (\alpha) - cos (\alpha)^2 $$
+
+$$\Leftrightarrow sin (\alpha)^2\left(1  - \left( \frac{n_L}{n_W}\right)^2 \right)  = cos^2 (\alpha)\left( 4 \cdot \left( \frac{n_L}{n_W} \right)^2  - 1 \right)$$
+
+$$\Leftrightarrow \frac{sin (\alpha)^2}{cos (\alpha)^2}  
+= \left( \frac{sin (\alpha)}{cos (\alpha)} \right)^2
+= tan^2 (\alpha) 
+= \frac{\left( 4 \cdot \left( \frac{n_L}{n_W} \right)^2  - 1 \right)}{\left(1  - \left( \frac{n_L}{n_W}\right)^2 \right) }$$
+
+$$\Leftrightarrow tan(\alpha) 
+= \sqrt{\frac{\left( 4 \cdot \left( \frac{n_L}{n_W} \right)^2  - 1 \right)}{\left(1  - \left( \frac{n_L}{n_W}\right)^2 \right) }}$$
 
 mit $n_{Luft} = 1$ und $n_{Wasser} = 1.34$
 
 ist dies bei 
 
-$$\alpha \approx 60^\circ$$
+$$\Leftrightarrow \alpha
+= arctan \left( \sqrt{\frac{4 \cdot \left( \frac{n_L}{n_W} \right)^2  - 1 }{1  - \left( \frac{n_L}{n_W}\right)^2 }} \right)
+= arctan \left( \sqrt{\frac{4 \cdot \left( \frac{1}{1.34} \right)^2  - 1 }{1  - \left( \frac{1}{1.34}\right)^2 }} \right)
+= 1.03 = 60^\circ$$
 
 Dazu gehört der Ablenkwinkel
 
