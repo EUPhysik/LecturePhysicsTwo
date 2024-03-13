@@ -170,16 +170,16 @@ name: innerer_photo
 Schematische Darstellung des inneren Photoeffektes
  ```
 
- ```{figure} Bilder/LDR.png
+ ```{figure} https://commons.wikimedia.org/wiki/File:Photodiode-closeup.jpg#/media/Datei:Photodiode-closeup.jpg
 ---
 width: 80%
 alt: Photoeffekt
 name: R_foto
 ---
-Fotowiderstand, Quelle: Ulfbastel - CC BY-SA 4.0, https://commons.wikimedia.org/w/index.php?curid=92806797
+Fotodiode, Quelle: John Maushammer, 2006, CC BY-SA 2.5, https://commons.wikimedia.org/w/index.php?curid=3352608
  ```
 
-Ein Fotowiderstand (siehe {numref}`Abbildung %s <R_foto>`) ist solch ein homogener Halbleiter, bei dem der innere Fotoeffekt ausgenutzt wird. Häufig wird Silizium hierzu eingesetzt. 
+Eine Fotodiode (siehe {numref}`Abbildung %s <R_foto>`) ist solch ein homogener Halbleiter, bei dem der innere Fotoeffekt ausgenutzt wird. Häufig wird Silizium hierzu eingesetzt. 
 Bei Silizium beträgt die Bandlücke zwischen Valenz- und Leitungsband $W_{Band} = 1.1 \, eV$. Photonen mit der Frequenz 
 
 $$f > \frac{W_{Band}}{h} \approx 2,4 \cdot 10^14 \,Hz$$
@@ -188,4 +188,4 @@ lösen hier den inneren Fotoeffekt aus. Diese Frequenz entspricht einer Wellenl�
 
 $$ \lambda = \frac{c}{f} = 1200 \, \longrightarrow \text{ infrarot }$$
 
-Wird der Fotowiderstand mit Licht mit dieser oder einer geringeren Wellenlänge bestrahlt, werden Elektronen aus dem Valenzband in das Leitungsband gehoben und der Fotowiderstand wird leitend.
+Wird der Fotowiderstand mit Licht mit dieser oder einer geringeren Wellenlänge bestrahlt, werden Elektronen aus dem Valenzband in das Leitungsband gehoben und der Fotowiderstand wird leitend.B
