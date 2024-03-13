@@ -170,7 +170,7 @@ name: innerer_photo
 Schematische Darstellung des inneren Photoeffektes
  ```
 
- ```{figure} https://commons.wikimedia.org/wiki/File:Photodiode-closeup.jpg#/media/Datei:Photodiode-closeup.jpg
+ ```{figure} https://upload.wikimedia.org/wikipedia/commons/f/f8/Photodiode-closeup.jpg
 ---
 width: 80%
 alt: Photoeffekt
@@ -188,4 +188,4 @@ lösen hier den inneren Fotoeffekt aus. Diese Frequenz entspricht einer Wellenl�
 
 $$ \lambda = \frac{c}{f} = 1200 \, \longrightarrow \text{ infrarot }$$
 
-Wird der Fotowiderstand mit Licht mit dieser oder einer geringeren Wellenlänge bestrahlt, werden Elektronen aus dem Valenzband in das Leitungsband gehoben und der Fotowiderstand wird leitend.B
+Wird der Fotowiderstand mit Licht mit dieser oder einer geringeren Wellenlänge bestrahlt, werden Elektronen aus dem Valenzband in das Leitungsband gehoben und die Photodiode erzeugt eine Spannung.
