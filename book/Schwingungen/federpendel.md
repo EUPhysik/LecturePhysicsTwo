@@ -100,7 +100,7 @@ Damit ist
 
  und 
 
- $$x \left( t\cdot \omega_0 = \frac{\pi}{2}\right) = c_1 \cdot e^{i\omega_0 \cdot \frac{\pi}{2}} + c_2 \cdot e^{-i\omega_0 \cdot \frac{\pi}{2}} = 0$$
+ $$x \left( t\cdot \omega_0 = \frac{\pi}{2}\right) = c_1 \cdot e^{i\frac{\pi}{2}} + c_2 \cdot e^{-i \frac{\pi}{2}} = 0$$
 
  Die e-Funktion lässt sich nach der [Eulersche Formel](https://de.wikipedia.org/wiki/Eulersche_Formel) auch schreiben als
 
@@ -108,7 +108,7 @@ Damit ist
 
  Damit ist 
 
- $$c_1 \cdot e^{i\omega_0 \cdot \frac{\pi}{2}} + c_2 \cdot e^{-i\omega_0 \cdot \frac{\pi}{2}} = 0$$
+ $$c_1 \cdot e^{i\frac{\pi}{2}} + c_2 \cdot e^{-i \frac{\pi}{2}} = 0$$
  $$\Leftrightarrow c_1 \cdot \left(cos ( \frac{\pi}{2}) + i sin ( \frac{\pi}{2}) \right) + c_2 \cdot \left(cos ( - \frac{\pi}{2}) + i \cdot sin (- \frac{\pi}{2}) \right)  = 0$$
  $$\Leftrightarrow c_1 \cdot \left(cos ( \frac{\pi}{2}) + i sin ( \frac{\pi}{2}) \right) + c_2 \cdot \left(cos (\frac{\pi}{2}) - i \cdot sin (\frac{\pi}{2}) \right)  = 0$$
  $$\Leftrightarrow cos ( \frac{\pi}{2}) \cdot \left(c_1  + c_2 \right) + i\cdot sin (\frac{\pi}{2}) \left(c_1 - c_2\right)  = 0$$
