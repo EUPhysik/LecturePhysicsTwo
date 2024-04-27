@@ -100,7 +100,7 @@ Und die Energie des gedämpften harmonischen Oszillators ist dann
 
 $$E_{mech} \approx \frac{1}{2} m \omega^2 \hat{x}^2 e^{-2\delta \cdot t} =: E_{mech, \delta = 0}e^{-\frac{t}{\tau}}$$
 
-mit $E_{mech, \delta = 0} = \frac{1}{2}k \hat{x}^2$ und $\tau = \frac{2}{\delta} = \frac{4m}{\beta}$. 
+mit $E_{mech, \delta = 0} = \frac{1}{2}k \hat{x}^2$ und $\tau = \frac{1}{2\delta} = \frac{m}{\beta}$. 
 
 $\tau$ wird auch als Zeitkonstante bezeichnet. 
 
