@@ -70,7 +70,7 @@ $$x\left(t = 0\right) =  \hat{x} \text{ und } x \left( t\cdot \omega_0 = \frac{\
 ergibt sich für die schwach gedämpfte Schwingung die Bewegungsgleichung
 
 $$\Rightarrow x(t) = A_1 e^{-\delta t} \cdot e^{\left( i \sqrt{\omega_0^2 - \delta^2} \right) t}
-+ A_2 e^{-\delta t} \cdot e^{\left(- i \sqrt{\omega_0^2 - \delta^2}\right) t} = \hat{x}e^{-\delta t} \cdot \text{cos} \left( \sqrt{\delta^2 - \omega_0^2} t
++ A_2 e^{-\delta t} \cdot e^{\left(- i \sqrt{\omega_0^2 - \delta^2}\right) t} = \hat{x}e^{-\delta t} \cdot \text{cos} \left( \sqrt{\omega_0^2 - \delta^2} t
 \right)$$
 
 mit $\text{cos} \left(\phi \right) = \frac{1}{2}\left(e^{i\phi}  + e^{-i\phi}\right)$ und $\hat{y} = 2 A$. 
