@@ -110,7 +110,7 @@ Der gedämpfte Oszillator wird häufig durch einen sogenannten Gütefaktor (nach
 
 Der Q-Faktor ist umgekehrt proportional zu dem relativen Energieverlust während einer Schwingung. 
 
-$$Q = \frac{1}{\left(\frac{\Delta E_{mech}}{E_{mech}} \right)_{Schwingungsdauer}}$$
+$$Q = \frac{2\pi}{\left(\frac{\Delta E_{mech}}{E_{mech}} \right)_{Schwingungsdauer}}$$
 
 ### Lehr'sches Dämpfungsmaß
 
