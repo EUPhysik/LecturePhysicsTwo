@@ -44,8 +44,8 @@ jobs:
     # DEBUG: prüfen ob index.html existiert
     - name: Check build output
       run: |
-      ls -la _build/html
-      test -f _build/html/index.html
+        ls -la _build/html
+        test -f _build/html/index.html
     
     # Push the book's HTML to github-pages
     - name: GitHub Pages action
