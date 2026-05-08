@@ -39,7 +39,7 @@ jobs:
    # Build the book
     - name: Build the book
       run: |
-        jupyter-book build book . 
+        jupyter-book build . 
 
     - name: Check build output
       run: |
