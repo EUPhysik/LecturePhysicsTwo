@@ -39,13 +39,15 @@ jobs:
    # Build the book
     - name: Build the book
       run: |
-        jupyter-book build book
+        jupyter-book build book . --all --verbose
 
     - name: Check build output
       run: |
-        ls -la book/_build/html
-        test -f book/_build/html/index.html
-
+        pwd
+        ls -la
+        find . -maxdepth 5 -type d
+        find . -maxdepth 6 -name "index.html"
+        
     - name: GitHub Pages action
       uses: peaceiris/actions-gh-pages@v3
       with:
